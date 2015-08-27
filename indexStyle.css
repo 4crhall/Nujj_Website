@@ -1,5 +1,172 @@
-h1 {
-	font-size:100;
-	color:Blue;
+body {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#NujjLogo {
+	text-align: center;
+	padding-bottom: 10px;
+	background-color: #767677;
+	height:auto;
+}
+
+#top {
+	text-align: justify;
+	background-color: #767677;
+	height:auto;
+}
+
+#top > h2,
+#top > p {
+	display: inline-block;
 	font-family: 'Josefin Sans', sans-serif;
+	color: #F6F6F6;
+}
+
+#top::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+header {
+	text-align: center;
+	background-color: #767677;
+	width: 100%;
+}
+
+header > img,
+header > nav {
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+header > nav {
+	font-size: 20px;
+	vertical-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #F6F6F6;
+	padding-right: 10px;
+}
+
+
+header > div,
+header > div::before,
+header nav,
+header > div img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header > div {
+    height: auto;
+    padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+header > div::before {
+    content: '';
+    height: auto;
+}
+
+header > div img {
+    font-size: 3em;
+    font-style: italic;
+}
+
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+
+header nav a:last-child {
+    padding-right: 0;
+}
+
+#NujjReceipts > img {
+	width:25%;
+	height:auto;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-bottom: 12.5%;
+	margin-top: 12.5%;
+}
+
+#NujjReceipts > img,
+#NujjReceipts > blockquote {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/** blockquote styles **/
+.bq3 { 
+	width: 400px; 
+	background: url('Images/Quote_down.png') top left no-repeat; 
+	padding-left: 55px; 
+	color: #575757; 
+}
+
+.bq3 > p { 
+	font-family: 'Josefin Sans', sans-serif;
+	padding-right: 35px;  
+	background: url('Images/Quote_up.png') bottom right no-repeat; 
+	padding-bottom: 0px; 
+	color: #767676; 
+	font-size: 20px;
+	line-height: auto; }
+
+.bq3 > p:hover {
+	font-family: 'Josefin Sans', sans-serif;
+	padding-right: 35px;  
+	background: url('Images/Quote_up.png') bottom right no-repeat; 
+	padding-bottom: 0px; 
+	color: #333;  
+	transition: color 0.4s;
+	line-height: auto;
+}
+
+.bq3 > h6 { 
+	font-family: 'Josefin Sans', sans-serif;
+	color: #333; 
+	font-weight: bold;
+	font-size: 20px; }
+
+#NujjAccounts > img {
+	width:25%;
+	height:auto;
+	margin-bottom: 12.5%;
+}
+
+#NujjAccounts > img,
+#NujjAccounts > blockquote {
+	margin-left: 12.5%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+@media screen and (max-width: 720px){
+    
+    header {
+        height: auto;
+    }
+    
+    header > div,
+    header > div img,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    
 }
