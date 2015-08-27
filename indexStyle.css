@@ -12,16 +12,18 @@ h1 {
 	margin-top: 20px;
 }
 
+#alltop {
+	background-color: #767677; 
+}
+
 #NujjLogo {
 	text-align: center;
 	padding-bottom: 10px;
-	background-color: #767677;
 	height:auto;
 }
 
 #top {
 	text-align: justify;
-	background-color: #767677;
 	height:auto;
 }
 
@@ -170,6 +172,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 #Alex > #image > h6 {
+	line-height: 25px;
 	font-weight: normal;
 	text-align: Center;
 	font-size: 20px;
@@ -203,6 +206,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 #Charlie > #image > h6 {
+	line-height: 25px;
 	font-weight: normal;
 	text-align: Center;
 	font-size: 20px;
@@ -236,6 +240,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 #Ben > #image > h6 {
+	line-height: 25px;
 	font-weight: normal;
 	text-align: Center;
 	font-size: 20px;
@@ -262,6 +267,39 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	vertical-align: middle;
 }
 
+#Marcin > #image {
+	width: 50%;
+	font-family: 'Josefin Sans', sans-serif;
+	height:auto;
+}
+
+#Marcin > #image > h6 {
+	line-height: 25px;
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#Marcin > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+#Marcin > #image > img {
+	width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 6.25%;
+}
+
+#Marcin > #image,
+#Marcin > blockquote {
+	display: inline-block;
+	vertical-align: middle;
+}
 
 @media screen and (max-width: 720px){
     
