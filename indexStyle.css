@@ -5,6 +5,13 @@ body {
 	margin-top: 0px;
 }
 
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 20px;
+}
+
 #NujjLogo {
 	text-align: center;
 	padding-bottom: 10px;
@@ -122,7 +129,7 @@ header nav a:last-child {
 	padding-bottom: 0px; 
 	color: #767676; 
 	font-size: 20px;
-	line-height: auto; }
+	line-height: 40px; }
 
 .bq3 > p:hover {
 	font-family: 'Josefin Sans', sans-serif;
@@ -150,6 +157,107 @@ header nav a:last-child {
 #NujjAccounts > img,
 #NujjAccounts > blockquote {
 	margin-left: 12.5%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+hr { width:70%; height:1px; background: #fff; text-align: center; }
+
+#Alex > #image {
+	width: 50%;
+	font-family: 'Josefin Sans', sans-serif;
+	height:auto;
+}
+
+#Alex > #image > h6 {
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#Alex > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+#Alex > #image > img {
+	width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 6.25%;
+}
+
+#Alex > #image,
+#Alex > blockquote {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#Charlie > #image {
+	width: 50%;
+	font-family: 'Josefin Sans', sans-serif;
+	height:auto;
+}
+
+#Charlie > #image > h6 {
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#Charlie > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+#Charlie > #image > img {
+	width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 6.25%;
+}
+
+#Charlie > #image,
+#Charlie > blockquote {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#Ben > #image {
+	width: 50%;
+	font-family: 'Josefin Sans', sans-serif;
+	height:auto;
+}
+
+#Ben > #image > h6 {
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#Ben > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+#Ben > #image > img {
+	width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 6.25%;
+}
+
+#Ben > #image,
+#Ben > blockquote {
 	display: inline-block;
 	vertical-align: middle;
 }
