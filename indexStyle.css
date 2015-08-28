@@ -5,6 +5,26 @@ body {
 	margin-top: 0px;
 }
 
+a:link {
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:active {
+	color: #F6F6F6;
+    text-decoration: none;
+}
+
 h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
@@ -12,9 +32,6 @@ h1 {
 	margin-top: 20px;
 }
 
-#alltop {
-	background-color: #767677; 
-}
 
 #NujjLogo {
 	text-align: center;
@@ -41,65 +58,68 @@ h1 {
 }
 
 
-
-
-
 header {
 	text-align: center;
-	background-color: #767677;
 	width: 100%;
-}
-
-header > img,
-header > nav {
-	display: inline-block;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-header > nav {
 	font-size: 20px;
+}
+
+header > nav {
 	vertical-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #F6F6F6;
-	padding-right: 10px;
-}
-
-
-header > div,
-header > div::before,
-header nav,
-header > div img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-header > div {
-    height: auto;
-    padding-left: 5px;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-}
-
-header > div::before {
-    content: '';
-    height: auto;
-}
-
-header > div img {
-    font-size: 3em;
-    font-style: italic;
 }
 
 header nav a {
     padding: 0 0.6em;
     white-space: nowrap;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
-header nav a:last-child {
-    padding-right: 0;
+
+.cbp-af-header {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top:0px;
+	background-color: #767677;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.4s;
 }
+
+.cbp-af-header .cbp-af-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.cbp-af-header #top,
+.cbp-af-header #top h2,
+.cbp-af-header #top p,
+.cbp-af-header #NujjLogo {
+	height:100px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.cbp-af-header.cbp-af-header-shrink #top,
+.cbp-af-header.cbp-af-header-shrink #top h2,
+.cbp-af-header.cbp-af-header-shrink #top p,
+.cbp-af-header.cbp-af-header-shrink #NujjLogo {
+	height: 0px;
+	color: #767677;
+}
+
+#OurProducts {
+	margin-top: 300px;
+}
+
+
 
 #NujjReceipts > img {
 	width:25%;
@@ -165,13 +185,13 @@ header nav a:last-child {
 
 hr { width:70%; height:1px; background: #fff; text-align: center; }
 
-#Alex > #image {
+.Person > #image {
 	width: 50%;
 	font-family: 'Josefin Sans', sans-serif;
 	height:auto;
 }
 
-#Alex > #image > h6 {
+.Person > #image > h6 {
 	line-height: 25px;
 	font-weight: normal;
 	text-align: Center;
@@ -179,124 +199,22 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	font-style: italic;
 }
 
-#Alex > #image > h6 > b {
+.Person > #image > h6 > b {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 24;
 
 }
 
-#Alex > #image > img {
+.Person > #image > img {
 	width:50%;
 	margin-left: 25%;
 	margin-right: 25%;
 	margin-bottom: 6.25%;
 }
 
-#Alex > #image,
-#Alex > blockquote {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#Charlie > #image {
-	width: 50%;
-	font-family: 'Josefin Sans', sans-serif;
-	height:auto;
-}
-
-#Charlie > #image > h6 {
-	line-height: 25px;
-	font-weight: normal;
-	text-align: Center;
-	font-size: 20px;
-	font-style: italic;
-}
-
-#Charlie > #image > h6 > b {
-	font-weight: bolder;
-	font-style: normal;
-	font-size: 24;
-
-}
-
-#Charlie > #image > img {
-	width:50%;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 6.25%;
-}
-
-#Charlie > #image,
-#Charlie > blockquote {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#Ben > #image {
-	width: 50%;
-	font-family: 'Josefin Sans', sans-serif;
-	height:auto;
-}
-
-#Ben > #image > h6 {
-	line-height: 25px;
-	font-weight: normal;
-	text-align: Center;
-	font-size: 20px;
-	font-style: italic;
-}
-
-#Ben > #image > h6 > b {
-	font-weight: bolder;
-	font-style: normal;
-	font-size: 24;
-
-}
-
-#Ben > #image > img {
-	width:50%;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 6.25%;
-}
-
-#Ben > #image,
-#Ben > blockquote {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#Marcin > #image {
-	width: 50%;
-	font-family: 'Josefin Sans', sans-serif;
-	height:auto;
-}
-
-#Marcin > #image > h6 {
-	line-height: 25px;
-	font-weight: normal;
-	text-align: Center;
-	font-size: 20px;
-	font-style: italic;
-}
-
-#Marcin > #image > h6 > b {
-	font-weight: bolder;
-	font-style: normal;
-	font-size: 24;
-
-}
-
-#Marcin > #image > img {
-	width:50%;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 6.25%;
-}
-
-#Marcin > #image,
-#Marcin > blockquote {
+.Person > #image,
+.Person > blockquote {
 	display: inline-block;
 	vertical-align: middle;
 }

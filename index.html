@@ -1,30 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
   <head>
   	<link href="indexStyle.css" rel="stylesheet">
    	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="Images/Nujj_Logo.png">
-  <title>Nujj Ltd.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="keywords" content="design, iOS, javascript, app, swift, objective-c, reciepts, accounts, Nujj" />
+    <title>Nujj Ltd.</title>
+    <script src="modernizr.custom.js" ></script>
+    <script src="dist/js/smooth-scroll.js"></script>
+  </head>
   <body>
-    <div id="alltop">
-  	 <div id="top">
-       <h2>Nujj Ltd.</h2>
-        <p>Intuitive Design</p>
-      </div>
+    <div class="container">
+    <div class="cbp-af-header">
+      <div class = "cbp-af-inner">
+  	   <div id="top">
+          <h2>Nujj Ltd.</h2>
+          <p>Intuitive Design</p>
+        </div>
 
-      <div id="NujjLogo"><img src="Images/Nujj_Logo_Header.png" alt="HTML5 icon"></div>
+        <div id="NujjLogo"><img src="Images/Nujj_Logo_Header.png" alt="HTML5 icon"></div>
+      </div>
   	
-  	 <header>
-  		  <nav>
-    		  <a>Coming Soon</a>
-    		  <a>Our People</a>
-    		  <a>Home</a>
-    		  <a>Our Principles</a>
-    		  <a>Contact Us</a>
-    	 </nav>
-      </header>
+  	   <header>
+  		   <nav>
+    		   <a data-scroll href="#OurProducts">Our Products</a>
+    		   <a data-scroll href="#OurPeople">Our People</a>
+    		    <a>Home</a>
+    		    <a>Our Principles</a>
+    		    <a>Contact Us</a>
+    	   </nav>
+        </header>
     </div>
 
-    <h1>Our Products</h1>
+    <div id="OurProducts"><h1>Our Products</h1></div>
 
     <div id="NujjReceipts">
       <img src="Images/Nujj_Receipts.png">
@@ -40,11 +51,11 @@
       <h6>-Alexander Hewitt</h6>
       </blockquote>  
     <img src="Images/Nujj_Accounts.png"> 
-    </div><hr />
+    </di><hr/>
 
-    <h1>Our People</h1>
+    <div id="OurPeople"><h1>Our People</h1></div>
 
-    <div id="Alex">
+    <div id="Alex" class="Person">
       <div id="image">
         <h6><b>Alexander Hewitt -</b> Managing Director<br>iOS Development Team</h6>
         <img src="Images/Alex.png">
@@ -54,7 +65,7 @@
     </blockquote>   
     </div>
 
-    <div id="Charlie">
+    <div id="Charlie" class="Person">
       <div id="image">
         <h6><b>Charlie Hall -</b> Head of Finance<br>iOS Development Team</h6>
         <img src="Images/Charlie.png">
@@ -64,7 +75,7 @@
     </blockquote>   
     </div>
 
-    <div id="Ben">
+    <div id="Ben" class="Person">
       <div id="image">
         <h6><b>Benjamin Fongenie -</b> Head of Legal<br>Android Development Team</h6>
         <img src="Images/Ben.png">
@@ -74,7 +85,7 @@
     </blockquote>   
     </div>
 
-    <div id="Marcin">
+    <div id="Marcin" class="Person">
       <div id="image">
         <h6><b>Marcin Gorney -</b> Head of Technology<br>Android Development Team</h6>
         <img src="Images/Marcin.png">
@@ -87,8 +98,10 @@
     <h1>Our Principles</h1>
 
 
-
-
+    </div>
+    <script src="indexJava.js" ></script>
+    <script src="classie.js" ></script>
+    <script>smoothScroll.init();</script>
   </body>
 </html>
 
