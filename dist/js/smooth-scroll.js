@@ -481,4 +481,5 @@
 
 	return smoothScroll;
 
+
 });
