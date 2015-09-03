@@ -31,7 +31,7 @@
 	var defaults = {
 		speed: 1000,
 		easing: 'easeInOutCubic',
-		offset: 100,
+		offset: 50,
 		updateURL: true,
 		callback: function () {}
 	};
