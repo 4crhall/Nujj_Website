@@ -3,6 +3,7 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+
 }
 
 a:link {
@@ -84,14 +85,15 @@ header nav a {
 
 
 .cbp-af-header {
+	background-image: url('Images/stepping-stones.jpg') top left no-repeat;
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
 	top:0px;
 	background-color: #767677;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	transition: height 0.4s;
+	-webkit-transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	transition: height 0.5s;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -106,18 +108,25 @@ header nav a {
 .cbp-af-header #top p,
 .cbp-af-header #NujjLogo {
 	height:100px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .cbp-af-header.cbp-af-header-shrink #top,
 .cbp-af-header.cbp-af-header-shrink #top h2,
 .cbp-af-header.cbp-af-header-shrink #top p,
 .cbp-af-header.cbp-af-header-shrink #NujjLogo {
-	height: 0px;
+	height: 15px;
 	color: #767677;
 }
+
+.cbp-af-header.cbp-af-header-shrink #top h2,
+.cbp-af-header.cbp-af-header-shrink #top p,
+.cbp-af-header.cbp-af-header-shrink #NujjLogo {
+	opacity: 0;
+}
+
 
 #OurProducts {
 	margin-top: 300px;
@@ -129,13 +138,15 @@ header nav a {
     overflow: hidden;
 }
 
-#NujjReceipts > .pictureContainer {
-	
-	margin-left: 12.5%;
-	margin-right: 12.5%;
-	margin-bottom: 6.25%;
-	margin-top: 6.25%;
+#NujjAccounts,
+#NujjReceipts  {
+	display: inline-block;
+	margin-left: 12.4%;
+	margin-right: 12.4%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
+
 
 #NujjReceipts .pictureContainer img {
 	position: relative;
@@ -150,10 +161,16 @@ header nav a {
 }
 
 
-#NujjReceipts > .pictureContainer,
-#NujjReceipts > blockquote {
-	display: inline-block;
-	vertical-align: middle;
+#NujjAccounts > .pictureContainer img {
+	position: relative;
+	top:0;
+	width:100%;
+	height:auto;
+	transition: top 0.4s ease-in-out;
+}
+
+#NujjAccounts .pictureContainer img:hover{
+	top: -25vw;
 }
 
 /** blockquote styles **/
@@ -189,29 +206,6 @@ header nav a {
 	font-weight: bold;
 	font-size: 20px; }
 
-#NujjAccounts > .pictureContainer {
-	margin-bottom: 6.25%;
-	margin-top: 6.25%;
-}
-
-#NujjAccounts > .pictureContainer img {
-	position: relative;
-	top:0;
-	width:100%;
-	height:auto;
-	transition: top 0.4s ease-in-out;
-}
-
-#NujjAccounts .pictureContainer img:hover{
-	top: -25vw;
-}
-
-#NujjAccounts > .pictureContainer,
-#NujjAccounts > blockquote {
-	margin-left: 12.5%;
-	display: inline-block;
-	vertical-align: middle;
-}
 
 hr { width:70%; height:1px; background: #fff; text-align: center; }
 
@@ -271,6 +265,10 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
     
     header {
         height: auto;
+    }
+
+    body{
+    	text-align: center;
     }
     
     header > div,
