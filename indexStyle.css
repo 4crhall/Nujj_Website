@@ -192,7 +192,7 @@ header nav a {
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
 	color: #767676; 
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 40px; }
 
 .bq3 > p:hover {
@@ -236,10 +236,9 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 .Person > #image > img {
-	width:50%;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 6.25%;
+	width:40%;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 
 .Person > #image,
@@ -257,6 +256,8 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	font-size: 26px;
 }
 
+
+
 #PrincipleOne p{
 	margin-top: 25px;
 	margin-left: 25px;
@@ -264,6 +265,10 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: Light;
 	font-size: 24px;
+}
+
+#Marcin {
+	margin-bottom: 5%;
 }
 
 @media screen and (max-width: 720px){
