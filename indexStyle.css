@@ -3,6 +3,7 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	width:100%;
 
 }
 
@@ -273,21 +274,5 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 @media screen and (max-width: 720px){
     
-    header {
-        height: auto;
-    }
-
-    body{
-    	text-align: center;
-    }
-    
-    header > div,
-    header > div img,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
     
 }
