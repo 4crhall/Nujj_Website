@@ -4,7 +4,8 @@ body {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	width:100%;
-	overflow: hidden;
+	height:auto;
+	overflow-x: hidden;
 
 }
 
@@ -277,7 +278,43 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	margin-bottom: 5%;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 75em){
+
+.Person {
+	width: 100%;
+}
     
+ .Person > #image {
+	font-family: 'Josefin Sans', sans-serif;
+	height:auto;
+}
+
+.Person > #image > h6 {
+	line-height: 25px;
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.Person > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+.Person > #image > img {
+	width:40%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.Person > #image,
+.Person > blockquote {
+	width: 50%;
+	margin-left:25%;
+	display: block;
+}
     
 }
