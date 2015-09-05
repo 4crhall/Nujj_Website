@@ -316,5 +316,9 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	margin-left:25%;
 	display: block;
 }
+
+.Person > blockquote {
+	width: 80%;
+}
     
 }
