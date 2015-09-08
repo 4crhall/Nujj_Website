@@ -83,7 +83,7 @@ header > nav {
 }
 
 header nav a {
-    padding: 0 0.6em;
+    padding: 0 2.5%;
     white-space: nowrap;
     -webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
