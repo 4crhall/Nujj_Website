@@ -6,8 +6,22 @@ body {
 	width:100%;
 	height:auto;
 	overflow-x: hidden;
+	background: url('Images/Nujj_Background.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px 0px;
+    color: white;
 
 }
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+
 
 #container{
 	width:100%;
@@ -69,6 +83,15 @@ h1 {
     width: 100%;
 }
 
+nav a#pull {
+    display: none;
+} 
+
+nav li {
+	display: inline;
+	float: center;
+} 
+
 
 header {
 	text-align: center;
@@ -92,7 +115,7 @@ header nav a {
 
 
 .cbp-af-header {
-	background-image: url('Images/stepping-stones.jpg') top left no-repeat;
+	background-image: url('Images/Nujj_Background.jpg') top left no-repeat;
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
@@ -101,6 +124,7 @@ header nav a {
 	-webkit-transition: height 0.5s;
 	-moz-transition: height 0.5s;
 	transition: height 0.5s;
+	opacity: 0.8;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -198,23 +222,23 @@ header nav a {
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: #767676; 
+	color: rgb(180,180,180); 
 	font-size: 18px;
-	line-height: 40px; }
+	line-height: 2em; }
 
 .bq3 > p:hover {
 	font-family: 'Josefin Sans', sans-serif;
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: #333;  
+	color: white;  
 	transition: color 0.4s;
 	line-height: auto;
 }
 
 .bq3 > h6 { 
 	font-family: 'Josefin Sans', sans-serif;
-	color: #333; 
+	color: white; 
 	font-weight: bold;
 	font-size: 20px; }
 
@@ -280,12 +304,29 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 @media screen and (max-width: 75em){
 
+body {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width:100%;
+	height:auto;
+	overflow-x: hidden;
+	background: url('Images/Nujj_Background.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 110%;
+    background-position: 0px 0px;
+    color: white;
+}
+
 .Person {
 	width: 100%;
 }
     
  .Person > #image {
 	font-family: 'Josefin Sans', sans-serif;
+	margin-left:25%;
 	height:auto;
 }
 
@@ -305,21 +346,103 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 .Person > #image > img {
-	width:40%;
-	margin-left: 30%;
-	margin-right: 30%;
+	width:60%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .Person > #image,
 .Person > blockquote {
 	width: 50%;
-	margin-left:25%;
 	display: block;
 }
 
 .Person > blockquote {
-	margin-left: 10%;
 	width: 80%;
+	text-align: center;
+	font-size: 5vw;
 }
+
+.bq3 { 
+	background: url('Images/Quote_down.png') top left no-repeat; 
+	background-size: 3vw 3vw;
+	padding-left: 3vw; 
+	color: #575757; 
+}
+
+.bq3 > p { 
+	font-family: 'Josefin Sans', sans-serif;
+	padding-right: 3vw;  
+	background: url('Images/Quote_up.png') bottom right no-repeat; 
+	background-size: 3vw 3vw;
+	padding-bottom: 0px; 
+	color: white; 
+	font-size: 18px;
+	line-height: 6vw; }
+
+.bq3 > p:hover {
+	font-family: 'Josefin Sans', sans-serif;
+	padding-right: 3vw;  
+	background: url('Images/Quote_up.png') bottom right no-repeat; 
+	background-size: 3vw 3vw;
+	padding-bottom: 0px; 
+	color: white;  
+	transition: color 0.4s;
+	line-height: 6vw; }
+    
+}
+
+@media only screen and (max-width : 600px) {
+	#top {
+		display: none;
+	}
+
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+		border-bottom: 1px solid white;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+
+	nav a#pull {
+        display: block;
+        width: 100%;
+       	height: 8vw;
+        position: relative;
+    }
+
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 6vw 6vw;
+        display: inline-block;
+        position: absolute;
+        width: 8vw;
+        height: 8vw;
+        right: 4vw;
+        top: 1vw;
+    }
+
+
+    #OurProducts {
+	margin-top: 50px;
+}
+
     
 }
