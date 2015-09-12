@@ -22,6 +22,15 @@ nav li a {
 }
 
 
+header {
+	position: fixed;
+	background-color: grey;
+	opacity:0.8;
+	top: 0;
+	z-index: 10;
+}
+
+
 
 #container{
 	width:100%;
@@ -55,33 +64,6 @@ h1 {
 }
 
 
-#NujjLogo {
-	text-align: center;
-	padding-bottom: 10px;
-	height:auto;
-}
-
-#top {
-	text-align: justify;
-	height:auto;
-}
-
-#top > h2,
-#top > p {
-	display: inline-block;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #F6F6F6;
-}
-
-#top > p {
-	font-size: 24px;
-}
-
-#top::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
 
 nav a#pull {
     display: none;
@@ -114,53 +96,9 @@ header nav a {
 }
 
 
-.cbp-af-header {
-	background-image: url('Images/Nujj_Background.jpg') top left no-repeat;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
-	top:0px;
-	background-color: #767677;
-	-webkit-transition: height 0.5s;
-	-moz-transition: height 0.5s;
-	transition: height 0.5s;
-	opacity: 0.8;
-}
-
-.cbp-af-header .cbp-af-inner {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 0 1.875em;
-}
-
-.cbp-af-header #top,
-.cbp-af-header #top h2,
-.cbp-af-header #top p,
-.cbp-af-header #NujjLogo {
-	height:100px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.cbp-af-header.cbp-af-header-shrink #top,
-.cbp-af-header.cbp-af-header-shrink #top h2,
-.cbp-af-header.cbp-af-header-shrink #top p,
-.cbp-af-header.cbp-af-header-shrink #NujjLogo {
-	height: 15px;
-	color: #767677;
-}
-
-.cbp-af-header.cbp-af-header-shrink #top h2,
-.cbp-af-header.cbp-af-header-shrink #top p,
-.cbp-af-header.cbp-af-header-shrink #NujjLogo {
-	opacity: 0;
-}
-
 
 #OurProducts {
-	margin-top: 190px;
+	margin-top:80px;
 }
 
 .pictureContainer {
@@ -393,9 +331,6 @@ body {
 }
 
 @media only screen and (max-width : 600px) {
-	#top {
-		display: none;
-	}
 
 	nav {
 		position:relative;
