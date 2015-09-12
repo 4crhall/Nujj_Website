@@ -21,6 +21,18 @@ nav li a {
 	-webkit-box-sizing:border-box;
 }
 
+nav li img {
+		width:30.5px;
+		height:30px;
+		float:left;
+		
+	}
+
+nav li#homebutton {
+		float:left;
+		vertical-align:center;
+	}
+
 
 header {
 	position: fixed;
@@ -330,7 +342,7 @@ body {
     
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 700px) {
 
 	nav {
 		position:relative;
@@ -354,6 +366,18 @@ body {
 		padding-top: 5px;
 	}
 
+	nav li#notHomeButton a {
+		padding-left: 5vw;
+	}
+
+	nav li img {
+		width:30.5px;
+		height:30px;
+		float:none;
+		
+	}
+
+
 
 	nav a#pull {
         display: block;
@@ -376,7 +400,7 @@ body {
 
 
     #OurProducts {
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
     
