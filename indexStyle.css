@@ -345,12 +345,14 @@ body {
 		display: block;
 		float: none;
 		height: auto;
+		background-color: grey;
 	}
 
 	nav ul {
 		padding: 0;
 		display: none;
 		float: none;
+		background-color: grey;
 	}
 
 	nav li {
@@ -366,9 +368,8 @@ body {
 
 
 	nav li img {
-		width:30px;
-		height:30.5px;
-		float:none;
+		margin-right: 5%;
+		background-color: grey;
 		
 	}
 
@@ -376,12 +377,14 @@ body {
         display: block;
         width: 100%;
         position: relative;
+        background-color: grey;
     }
 
     nav a#pull:after {
         content:"";
         background: url('Images/nav-icon.png') no-repeat;
         background-size: 30.5px 30px;
+        background-color: grey;
         display: inline-block;
         position: absolute;
         width:31px;
