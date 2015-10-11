@@ -23,7 +23,7 @@ nav li img {
 
 header {
 	position: fixed;
-	background-color: grey;
+	background-color: rgb(64,64,66);
 	opacity:0.9;
 	top: 0;
 	z-index: 10;
@@ -32,6 +32,8 @@ header {
 
 
 #container{
+    margin-top:0px;
+    padding-top: 0px;
 	width:100%;
 }
 
@@ -59,7 +61,6 @@ h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	font-size: 40px;
-	margin-top: 20px;
 }
 
 
@@ -79,6 +80,8 @@ header {
 	text-align: center;
 	width: 100%;
 	font-size: 20px;
+    border-width: thin;
+    border-color: white;
 }
 
 header > nav {
@@ -97,10 +100,15 @@ header nav a {
 
 
 
-#OurProducts {
-	margin-top:80px;
+#TopHeader {
+    color: white;
+	padding-top:90px;
+    margin-top: 0px;
 }
 
+#OurProducts {
+    background-color: rgb(64,64,66);
+}
 
 .pictureContainer {
     width:25vw;
@@ -118,6 +126,7 @@ header nav a {
 #NujjReceipts  {
     text-align: center;
     font-size: 24px;
+    color: white;
 	display: inline-block;
 	margin-left: 12.5%;
 	margin-right: 12.5%;
