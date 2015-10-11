@@ -3,15 +3,9 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	width:100%;
-	height:auto;
-	overflow-x: hidden;
-	background: url('Images/Nujj_Background.jpg');
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 0px 0px;
-    color: white;
+    color: black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav li a {
@@ -23,7 +17,6 @@ nav li a {
 nav li img {
 		width:30.5px;
 		height:30px;
-		
 	}
 
 
@@ -81,6 +74,7 @@ nav li {
 } 
 
 
+
 header {
 	text-align: center;
 	width: 100%;
@@ -88,8 +82,7 @@ header {
 }
 
 header > nav {
-	height: 40px;
-	vertical-align: center;
+	height: 42px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #F6F6F6;
 }
@@ -108,6 +101,11 @@ header nav a {
 	margin-top:80px;
 }
 
+#NujjReceipts {
+    text-align: center;
+    font-size: 18px;
+}
+
 .pictureContainer {
     width:25vw;
     height:25vw;
@@ -121,7 +119,6 @@ header nav a {
     white-space:nowrap;
 }
 
-#NujjAccounts,
 #NujjReceipts  {
 	display: inline-block;
 	margin-left: 12.5%;
@@ -142,18 +139,6 @@ header nav a {
 }
 
 
-#NujjAccounts > .pictureContainer img {
-	position: relative;
-	top:0;
-	width:100%;
-	height:auto;
-	transition: top 0.4s ease-in-out;
-	opacity: 1;
-}
-
-#NujjAccounts .pictureContainer img:hover{
-	top: -25vw;
-}
 
 /** blockquote styles **/
 .bq3 { 
@@ -168,7 +153,7 @@ header nav a {
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: rgb(180,180,180); 
+	color: rgb(130,130,130); 
 	font-size: 18px;
 	line-height: 2em; }
 
@@ -177,7 +162,7 @@ header nav a {
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: white;  
+	color: black;  
 	transition: color 0.4s;
 	line-height: auto;
 }
@@ -255,15 +240,7 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	width:100%;
-	height:auto;
-	overflow-x: hidden;
-	background: url('Images/Nujj_Background.jpg');
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto 110%;
-    background-position: 0px 0px;
-    color: white;
+    color: black;
 }
 
 .Person {
@@ -273,7 +250,7 @@ body {
  .Person > #image {
 	font-family: 'Josefin Sans', sans-serif;
 	margin-left:25%;
-	height:auto;
+	height: auto;
 }
 
 .Person > #image > h6 {
@@ -322,7 +299,7 @@ body {
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	background-size: 3vw 3vw;
 	padding-bottom: 0px; 
-	color: white; 
+	color: black; 
 	font-size: 18px;
 	line-height: 6vw; }
 
@@ -332,13 +309,18 @@ body {
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	background-size: 3vw 3vw;
 	padding-bottom: 0px; 
-	color: white;  
+	color: black;  
 	transition: color 0.4s;
 	line-height: 6vw; }
     
 }
 
 @media only screen and (max-width : 50em) {
+    
+    header {
+        background-color: grey;
+    }
+    
 
 	nav {
 		position:relative;
@@ -372,24 +354,25 @@ body {
 		background-color: grey;
 		
 	}
+    
 
 	nav a#pull {
         display: block;
         width: 100%;
-        position: relative;
-        background-color: grey;
+        
     }
+    
+    
 
     nav a#pull:after {
         content:"";
         background: url('Images/nav-icon.png') no-repeat;
         background-size: 30.5px 30px;
-        background-color: grey;
         display: inline-block;
         position: absolute;
         width:31px;
 		height:31px;
-        right: 40px;
+        right: 10px;
         top: 5px;
     }
 
