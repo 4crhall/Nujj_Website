@@ -80,8 +80,6 @@ header {
 	text-align: center;
 	width: 100%;
 	font-size: 20px;
-    border-width: thin;
-    border-color: white;
 }
 
 header > nav {
@@ -107,7 +105,9 @@ header nav a {
 }
 
 #OurProducts {
+    text-align: center;
     background-color: rgb(64,64,66);
+    padding-bottom: 30px;
 }
 
 .pictureContainer {
@@ -239,6 +239,8 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 #Marcin {
 	margin-bottom: 5%;
 }
+
+
 
 @media screen and (max-width: 75em){
 
