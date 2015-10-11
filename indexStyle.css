@@ -102,12 +102,16 @@ header nav a {
     color: white;
 	padding-top:90px;
     margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #OurProducts {
     text-align: center;
     background-color: rgb(64,64,66);
-    padding-bottom: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 60px;
 }
 
 .pictureContainer {
@@ -118,7 +122,6 @@ header nav a {
 
 .pictures_inline {
 	width: 100%;
-    margin-top: 5%;
     margin-bottom: 5%;
     white-space:nowrap;
 }
