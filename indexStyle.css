@@ -243,7 +243,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 
 
-@media screen and (max-width: 75em){
+@media screen and (max-width: 1200px){
 
 body {
 	margin-right: 0px;
@@ -325,7 +325,7 @@ body {
     
 }
 
-@media only screen and (max-width : 50em) {
+@media only screen and (max-width : 800px) {
     
     header {
         background-color: rgb(64,64,66);
@@ -385,11 +385,50 @@ body {
         right: 10px;
         top: 5px;
     }
-
-
+    
     #OurProducts {
-	padding-top: 70px;
+    text-align: center;
+    background-color: rgb(64,64,66);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 60px;
 }
+
+    .pictureContainer {
+    width:250px;
+    height:500px;
+    overflow: hidden;
+}
+
+    .pictures_inline {
+	width: 100%;
+    margin-bottom: 5%;
+    white-space:nowrap;
+}
+
+    #NujjReceipts  {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+	display: inline-block;
+}
+
+
+    #NujjReceipts .pictureContainer img {
+	position: relative;
+	top:0;
+	width:100%;
+	height:auto;
+	transition: top 0.4s ease-in-out;
+}
+    
+    #NujjReceipts .pictureContainer img:hover{
+	top: 0px;
+}
+
+
+
+
 
     
 }
