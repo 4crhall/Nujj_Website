@@ -102,7 +102,7 @@ header nav a {
     color: white;
 	padding-top:90px;
     margin-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     margin-bottom: 0px;
 }
 
@@ -111,7 +111,7 @@ header nav a {
     background-color: rgb(64,64,66);
     padding-top: 0px;
     margin-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 15px;
 }
 
 .pictureContainer {
@@ -144,6 +144,18 @@ header nav a {
 
 #NujjReceipts .pictureContainer img:hover{
 	top: -350px;
+}
+
+#ReceiptsDescription .Left {
+    float: left;
+    width: 30vw;
+    text-align: center;
+}
+
+#ReceiptsDescription .Right {
+    float:right;
+    width: 70vw;
+    text-align: center;
 }
 
 
