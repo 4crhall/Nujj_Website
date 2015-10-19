@@ -255,7 +255,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-device-width: 1200px){
 
 body {
 	margin-right: 0px;
@@ -337,7 +337,7 @@ body {
     
 }
 
-@media only screen and (max-width : 800px) {
+@media only screen and (max-device-width : 800px) {
     
     header {
         background-color: rgb(64,64,66);
