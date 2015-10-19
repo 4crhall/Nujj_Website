@@ -264,8 +264,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
     and (device-aspect-ratio : 375/667)
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
-    and (-webkit-min-device-pixel-ratio : 2),
-,   screen and (max-device-width: 1200px), screen and (max-width: 1200px){
+    and (-webkit-min-device-pixel-ratio : 2), screen and (max-device-width: 1200px), screen and (max-width: 1200px){
 
 body {
 	margin-right: 0px;
@@ -347,7 +346,17 @@ body {
     
 }
 
-@media only screen and (max-device-width : 800px), screen and (max-width : 800px) {
+@media only screen 
+    and (min-device-width : 375px) // or 213.4375em
+    and (max-device-width : 667px) // or 41.6875em
+    and (width : 375px) // or 23.4375em
+    and (height : 559px) // or 34.9375em
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px), screen and (max-width : 800px) {
     
     header {
         background-color: rgb(64,64,66);
