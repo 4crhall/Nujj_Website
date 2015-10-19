@@ -276,11 +276,11 @@ body {
 
 .Person {
 	width: 100%;
+    text-align: center;
 }
     
  .Person > #image {
 	font-family: 'Josefin Sans', sans-serif;
-	margin-left:25%;
 	height: auto;
 }
 
@@ -372,8 +372,8 @@ body {
 		width: 100%;
         font-size: 60px;
 		border-bottom: 1px solid white;
-		padding-bottom: 5px;
-		padding-top: 5px;
+		padding-bottom: 15px;
+		padding-top: 20px;
 	}
 
 
@@ -391,10 +391,6 @@ body {
         
     }
         
-        
-    
-    
-
     nav a#pull:after {
         content:"";
         background: url('Images/nav-icon.png') no-repeat;
