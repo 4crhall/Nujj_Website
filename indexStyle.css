@@ -384,7 +384,7 @@ body {
 		opacity:1;
 		float: none;
 		width: 100%;
-        font-size: 30px;
+        font-size: 60px;
 		border-bottom: 1px solid white;
 		padding-bottom: 5px;
 		padding-top: 5px;
@@ -409,13 +409,14 @@ body {
     nav a#pull:after {
         content:"";
         background: url('Images/nav-icon.png') no-repeat;
-        background-size: 30.5px 30px;
+        background-size: 61px 60px;
         display: inline-block;
         position: absolute;
-        width:31px;
-		height:31px;
-        right: 10px;
-        top: 5px;
+        width:62px;
+		height:62px;
+        right: 20px;
+        top: 10px;
+        bottom: 10px;
     }
     
     #OurProducts {
