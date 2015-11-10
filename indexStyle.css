@@ -148,16 +148,84 @@ header nav a {
 
 #ReceiptsDescription .Left {
     float: left;
-    width: 30vw;
-    text-align: center;
+    width: 50vw;
 }
+
+#ReceiptsDescription .Left h2 {
+    padding-left: 100px;
+    
+}
+
+#ReceiptsDescription .Left p {
+    
+    padding-left: 100px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#ReceiptsDescription .Left b {
+    
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+
+
+#ReceiptsDescription .Left p:hover {
+    color: black;
+}
+
+#ReceiptsDescription .Left p b:hover {
+    font-size: 21px;
+}
+
+
 
 #ReceiptsDescription .Right {
     float:right;
-    width: 70vw;
+    width: 50vw;
     text-align: center;
 }
 
+#ReceiptsDescription .Right h2{
+    text-align: left;
+    padding-left: 60px;
+}
+
+#ReceiptsDescription .Right p {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#ReceiptsDescription .Right b {
+    
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+
+#ReceiptsDescription .Right p:hover {
+    color: black;
+}
+
+#ReceiptsDescription .Right p b:hover {
+    font-size: 21px;
+}
 
 
 /** blockquote styles **/
@@ -196,7 +264,8 @@ header nav a {
 
 hr { width:70%; height:1px; background: #fff; text-align: center; }
 
-.Person > #image {
+.Person > #image
+{
 	width: 50%;
 	font-family: 'Josefin Sans', sans-serif;
 	height:auto;
@@ -223,11 +292,27 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	margin-right: 30%;
 }
 
+/*
 .Person > #image,
 .Person > blockquote {
 	display: inline-block;
 	vertical-align: middle;
 }
+*/
+
+
+------------------------
+
+.Person > #Charlie > #image {
+    width: 30%;
+	font-family: 'Josefin Sans', sans-serif;
+	height: auto;
+}
+
+
+
+
+
 
 #PrincipleOne h2{
 	margin-top: 25px;
@@ -395,6 +480,37 @@ body {
         bottom: 10px;
     }
     
+    
+    
+    #ReceiptsDescription .Left {
+    float: left;
+    width: 100vw;
+    }
+    
+    #ReceiptsDescription .Left h2 {
+        padding-left: 60px;
+    }
+    
+    #ReceiptsDescription .Left p {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+        
+    
+    #ReceiptsDescription .Right {
+    float:right;
+    width: 100vw;
+    text-align: center;
+    }
+    
     #OurProducts {
     text-align: center;
     background-color: rgb(64,64,66);
@@ -405,7 +521,7 @@ body {
 
     .pictureContainer {
     width:250px;
-    height:500px;
+    height:250px;
     overflow: hidden;
 }
 
@@ -508,6 +624,36 @@ body {
         top: 20px;
         bottom: 20px;
     }
+        
+    #ReceiptsDescription .Left {
+    float: left;
+    width: 100vw;
+    }
+        
+    #ReceiptsDescription .Left h2 {
+        padding-left: 60px;
+    }
+    
+    #ReceiptsDescription .Left p {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+        
+    #ReceiptsDescription .Right {
+    float:right;
+    width: 100vw;
+    text-align: center;
+    }
+        
+        
     
     #OurProducts {
     text-align: center;
@@ -519,7 +665,7 @@ body {
 
     .pictureContainer {
     width:250px;
-    height:500px;
+    height:250px;
     overflow: hidden;
 }
 
