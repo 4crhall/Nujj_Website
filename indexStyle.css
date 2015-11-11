@@ -8,6 +8,17 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.Terms_and_Conditions {
+    padding-top: 50px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#TandC {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
 nav li a {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -334,6 +345,31 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 .Form {
     text-align: center;
+}
+
+.Footnote {
+    color:black;
+    text-align: center;
+}
+
+.Footnote a:link {
+    text-decoration: underline;
+    color: black;
+}
+
+.Footnote a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+.Footnote a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.Footnote a:active {
+	color: black;
+    text-decoration: underline;
 }
 
 
