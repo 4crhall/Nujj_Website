@@ -157,6 +157,26 @@ header nav a {
 	top: -350px;
 }
 
+#NujjReceipts a {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    
+/*    background-color: rgb(90,90,90)*/
+}
+
+#NujjReceipts a:hover {
+    background-color: rgb(90,90,90)
+}
+
 #ReceiptsDescription .Left {
     float: left;
     width: 50vw;
