@@ -29,7 +29,7 @@ section #services li div {
   transition: all 0.5s ease;
 }
 
-section #services li #Facebook {
+section #services li #Email {
   color: white;
   background-color: rgb(64,64,66);
 }
@@ -39,19 +39,19 @@ section #services li #Facebook {
   background-color: rgb(58,88,155);
 }
 
-section #services li #Facebook {
+section #services li #Twitter {
   color: white;
-  background-color: rgb(58,88,155);
+  background-color: rgb(80,171,241);
 }
 
-section #services li #Facebook {
-  color: white;
-  background-color: rgb(58,88,155);
+section #services li #Instagram {
+  color: White;
+  background-color: rgb(166,125,93);
 }
 
-section #services li #Facebook {
+section #services li #Linkedin {
   color: white;
-  background-color: rgb(58,88,155);
+  background-color: rgb(0,128,193);
 }
 
 section #services li div:hover {
