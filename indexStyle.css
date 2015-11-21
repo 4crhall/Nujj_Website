@@ -182,7 +182,7 @@ header nav a {
 
 #TopHeader {
     color: white;
-	padding-top:140px;
+	padding-top:30px;
     margin-top: 0px;
     padding-bottom: 50px;
     margin-bottom: 0px;
@@ -690,6 +690,15 @@ body {
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+        
+    #TopHeader {
+    color: white;
+	padding-top:160px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+        }
     
     header {
         background-color: none;
