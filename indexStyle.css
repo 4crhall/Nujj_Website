@@ -691,6 +691,11 @@ body {
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+         section #services li div:hover {
+  transform: none;
+  border-radius: none;
+}
     
     header {
         background-color: none;
