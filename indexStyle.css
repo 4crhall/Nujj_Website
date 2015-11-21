@@ -204,7 +204,7 @@ header nav a {
 
 .pictures_inline {
 	width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     white-space:nowrap;
 }
 
@@ -641,7 +641,7 @@ body {
     background-color: rgb(64,64,66);
     padding-top: 0px;
     margin-top: 0px;
-    padding-bottom: 0.1px;
+    padding-bottom: 1px;
 }
 
     .pictureContainer {
@@ -652,7 +652,6 @@ body {
 
     .pictures_inline {
 	width: 100%;
-    margin-bottom: 5%;
     white-space:nowrap;
 }
 
