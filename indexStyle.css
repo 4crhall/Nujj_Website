@@ -22,7 +22,7 @@ section #services li div {
   width: 100px;
   height: 100px;
 /*  color: white;*/
-  font-size: 3.4em;
+  font-size: 70px;
   text-align: center;
   line-height: 100px;
 /*  background-color: rgb(64,64,66);*/
@@ -54,6 +54,10 @@ section #services li #Linkedin {
   background-color: rgb(0,128,193);
 }
 
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
 
 section #services li span {
   width: 100px;
@@ -542,11 +546,6 @@ body {
 
 @media screen and (max-width : 800px) {
     
-    section #services li div:hover {
-  transform: rotate(360deg);
-  border-radius: 100px;
-}
-    
     header {
         background-color: none;
         height: 80px;
@@ -691,11 +690,6 @@ body {
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
-        
-         section #services li div:hover {
-  transform: none;
-  border-radius: none;
-}
     
     header {
         background-color: none;
