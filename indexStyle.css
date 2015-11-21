@@ -54,10 +54,7 @@ section #services li #Linkedin {
   background-color: rgb(0,128,193);
 }
 
-section #services li div:hover {
-  transform: rotate(360deg);
-  border-radius: 100px;
-}
+
 section #services li span {
   width: 100px;
   height: 20px;
@@ -544,6 +541,11 @@ body {
 
 
 @media screen and (max-width : 800px) {
+    
+    section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
     
     header {
         background-color: none;
