@@ -1,0 +1,280 @@
+body {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+    color: black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+nav li img {
+		width:30.5px;
+		height:30px;
+	}
+
+
+header {
+	position: fixed;
+	background-color: rgb(64,64,66);
+	/*opacity:0.9;*/
+	top: 0;
+	z-index: 10;
+}
+
+
+#container{
+    margin-top:0px;
+    padding-top: 0px;
+	width:100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:active {
+	color: #F6F6F6;
+    text-decoration: none;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 40px;
+}
+
+
+
+nav a#pull {
+    display: none;
+} 
+
+nav li {
+	display: inline;
+	float: center;
+} 
+
+
+
+header {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+    
+}
+
+header > nav {
+	height: 42px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #F6F6F6;
+}
+
+header nav a {
+    padding: 0 2.5%;
+    white-space: nowrap;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#topHeader {
+    margin-top: 80px;
+    color: black;
+}
+
+#leftPicture img {
+    width: 24.6vw;
+    height: 25vw;
+     -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+    
+}
+
+#leftPicture img:hover {
+    background-color: rgb(64,64,66) ;
+}
+
+#leftPicture .info {
+    display: none;
+}
+
+#leftPicture h1,p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+
+@media screen and (max-width : 800px) {
+    
+    header {
+        background-color: none;
+        height: 80px;
+    }
+    
+
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		background-color: rgb(64,64,66);
+		opacity:1;
+		float: none;
+		width: 100%;
+        font-size: 30px;
+		border-bottom: 1px solid white;
+		padding-bottom: 7.5px;
+		padding-top: 10px;
+	}
+
+
+	nav li img {
+		margin-right: 5%;
+
+		
+	}
+    
+
+	nav a#pull {
+        display: block;
+        width: 100%;
+        height: 80px;
+        
+    }
+        
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 30.5px 30px;
+        display: inline-block;
+        position: absolute;
+        width:31px;
+		height:31px;
+        right: 10px;
+        top: 5px;
+        bottom: 10px;
+    }
+    
+
+    
+}
+
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) 
+    and (width : 375px) 
+    and (height : 559px)
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+        
+    #TopHeader {
+    color: white;
+	padding-top:160px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+        }
+    
+    header {
+        background-color: none;
+        height: 160px;
+    }
+    
+
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		background-color: rgb(64,64,66);
+		opacity:1;
+		float: none;
+		width: 100%;
+        font-size: 120px;
+		border-bottom: 1px solid white;
+		padding-bottom: 30px;
+		padding-top: 40px;
+	}
+        
+        a:hover {
+    text-decoration: none;
+    font-size: 120px;
+}
+
+
+	nav li img {
+		margin-right: 5%;
+
+		
+	}
+    
+
+	nav a#pull {
+        display: block;
+        width: 100%;
+        height: 80px;
+        
+    }
+        
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 121px 120px;
+        display: inline-block;
+        position: absolute;
+        width:124px;
+		height:124px;
+        right: 40px;
+        top: 20px;
+        bottom: 20px;
+    }
+        
+    
+}

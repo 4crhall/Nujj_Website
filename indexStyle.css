@@ -29,6 +29,10 @@ section #services li div {
   transition: all 0.5s ease;
 }
 
+section a{
+    text-decoration: none;
+}
+
 section #services li #Email {
   color: white;
   background-color: rgb(64,64,66);
@@ -119,22 +123,22 @@ header {
 	width:100%;
 }
 
-a:link {
+header a:link {
     text-decoration: none;
     color: #F6F6F6;
 }
 
-a:visited {
+header a:visited {
     text-decoration: none;
     color: #F6F6F6;
 }
 
-a:hover {
+header a:hover {
     text-decoration: none;
     font-size: 24px;
 }
 
-a:active {
+header a:active {
 	color: #F6F6F6;
     text-decoration: none;
 }
@@ -162,6 +166,7 @@ header {
 	text-align: center;
 	width: 100%;
 	font-size: 20px;
+    
 }
 
 header > nav {
@@ -229,6 +234,8 @@ header nav a {
 }
 
 #NujjReceipts a {
+    text-decoration: none;
+    color: white;
     padding-top: 5px;
     padding-bottom: 3px;
     padding-left: 5px;
@@ -245,7 +252,7 @@ header nav a {
 }
 
 #NujjReceipts a:hover {
-    background-color: rgb(90,90,90)
+    background-color: rgb(90,90,90);
 }
 
 #ReceiptsDescription .Left {
@@ -475,6 +482,7 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), screen and (max-device-width: 1200px), screen and (max-width: 1200px){
+        
 
 body {
 	margin-right: 0px;
@@ -689,6 +697,12 @@ body {
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+    .Terms_and_Conditions {
+    padding-top: 150px;
+    font-size: 26px;
+    text-align: center;
+    }
         
         
     #TopHeader {

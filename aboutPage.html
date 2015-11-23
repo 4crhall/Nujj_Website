@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+  	<link href="aboutPage.css" rel="stylesheet">
+   	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="Images/Nujj_Logo.png">
+
+    <meta name="viewport" content="user-scalable = yes">
+    
+    <meta name="keywords" content="design, iOS, javascript, app, swift, objective-c, reciepts, accounts, Nujj" />
+    <title>nujj ltd.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="modernizr.custom.js" ></script>
+    <script src="dist/js/smooth-scroll.js"></script>
+    <script src="Hover.js" ></script>
+
+    <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 600 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+      
+      <script>
+        $(document).ready(function(){
+        $("#Charlie").mouseover(function(){
+            $("#charlieInfo").stop().slideDown("slow");
+        });
+        $("#Charlie").mouseout(function(){
+            $("#charlieInfo").slideUp("slow");
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Alex").mouseover(function(){
+            $("#alexInfo").stop().slideDown("slow");
+        });
+        $("#Alex").mouseout(function(){
+            $("#alexInfo").slideUp("slow");
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Ben").mouseover(function(){
+            $("#benInfo").stop().slideDown("slow");
+        });
+        $("#Ben").mouseout(function(){
+            $("#benInfo").slideUp("slow");
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Marcin").mouseover(function(){
+            $("#marcinInfo").stop().slideDown("slow");
+        });
+        $("#Marcin").mouseout(function(){
+            $("#marcinInfo").slideUp("slow");
+            });
+        });
+    </script>
+
+  </head>
+
+  
+  <body>
+      <div id="container">
+      
+          <header>
+            <nav>
+                <ul>
+                 <li id="homeButton"><a><a href="http://www.nujjltd.com/"><img src="Images/NujjHigherTop.png" id="icon" alt="Home"></a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="#OurProducts">Apps</a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="#ContactUs">Contact Us</a></li> 
+                </ul>
+                <a href="#" id="pull"></a>
+            </nav>
+          </header>
+          
+          <h1 id="topHeader">The Team</h1>
+          
+          <div id="leftPicture">
+              <img id="Charlie" src="Images/Charlie.png">
+              <img id="Alex" src="Images/Alex.png">
+              <img id="Ben" src="Images/Ben.png">
+              <img id="Marcin" src="Images/Marcin.png">
+              <div class="info" id="charlieInfo"><h1><b>Charlie Hall</b> - Director of Finance</h1>
+              <p>A true realist that believes strongly in the company principles, Charlie brings us down to Earth when clarity is needed to                  move forward. Providing simple and clean solutions, he will ensure you understand the products we bring you.</p>
+              </div>
+              <div class="info" id="alexInfo"><h1><b>Alex Hewitt</b> - Managing Director</h1>
+              <p>Alex is the company's motivator and ideas man. Having a clear vision on how the company should be run, Alex defines our                    core principles. With his determined and thorough attitude, he ensures these principles are at the heart of everything we                   produce.</p>
+              </div>
+              <div class="info" id="benInfo"><h1><b>Ben Fongenie</b> - Director of Business Development</h1>
+              <p>Leaving no stone unturned and no corners cut, Ben defines the care we believe is needed to produce the perfect products for                you. Having a strong legal background, he provides the foundations needed for our ideas to flourish.</p>
+              </div>
+              <div class="info" id="marcinInfo"><h1><b>Marcin Gorney</b> - Director of Technology</h1>
+              <p>The newest addition to the Nujj team, Marcin comes with a unique skill set. Full of innovative ideas and a fine critic of                  all aspects of the company, every product you see will be fine-tuned until it reaches his high expectations.</p>
+              </div>
+          </div>
+          
+          
+      </div>
+      
+      
+      
+      
+  </body>
