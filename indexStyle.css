@@ -251,9 +251,11 @@ header nav a {
 /*    background-color: rgb(90,90,90)*/
 }
 
+/*
 #NujjReceipts a:hover {
     background-color: rgb(90,90,90);
 }
+*/
 
 #ReceiptsDescription .Left {
     float: left;
