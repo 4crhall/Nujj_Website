@@ -196,7 +196,7 @@ section.intro hr, .intro hr, .intro.stripe hr {
     
     header {
         background-color: none;
-        height: 80px;
+        height: 40px;
     }
     
 
@@ -242,7 +242,7 @@ section.intro hr, .intro hr, .intro.stripe hr {
         
     nav a#pull:after {
         content:"";
-        background: url('Images/nav-icon.png') no-repeat;
+        background: url('../Images/nav-icon.png') no-repeat;
         background-size: 30.5px 30px;
         display: inline-block;
         position: absolute;
@@ -334,7 +334,7 @@ section.intro hr, .intro hr, .intro.stripe hr {
         
     nav a#pull:after {
         content:"";
-        background: url('Images/nav-icon.png') no-repeat;
+        background: url('../Images/nav-icon.png') no-repeat;
         background-size: 121px 120px;
         display: inline-block;
         position: absolute;
