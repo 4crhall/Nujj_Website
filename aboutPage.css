@@ -299,7 +299,7 @@ header nav a {
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
         
         
-    #TopHeader {
+    #topHeader {
     color: white;
 	padding-top:160px;
     margin-top: 0px;
