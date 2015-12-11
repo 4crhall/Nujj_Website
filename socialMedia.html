@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    
+    <meta name="viewport" content="user-scalable = yes">
+    <!-- Social-feed css -->
+    <link href="css/example.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome for social network icons -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    
+    
+        <script>
+        $(function() {
+        var pull    = $('#pull');
+            menu    = $('nav ul');
+
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 600 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+                }
+            });
+        });
+        </script>
+</head>
+
+<body>
+    
+            <header>
+            <nav>
+                <ul>
+                 <li id="homeButton"><a><a href="http://www.nujjltd.com/"><img src="Images/NujjHigherTop.png" id="icon" alt="Home"></a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="#OurProducts">Apps</a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="#ContactUs">Contact Us</a></li> 
+                 <li id="notHomeButton"><a class="big" href="/aboutPage.html">About Us</a></li>
+                 <li id="notHomeButton"><a class="big" href="/socialMedia.html">Social media</a></li>
+                </ul>
+                <a href="#" id="pull"></a>
+            </nav>
+          </header> 
+    
+    <section class="intro">
+        <div class="container">
+            <h1 id="topHeader">Social Media</h1>
+        
+            
+        </div>
+    </section>
+    <section class="stripe">
+        <div class="container field">
+            <input type="text" class="input field-left" value="@nujjltd, #nujjltd" id="query">
+            <button class='button field-right' id="button-update"><i class="fa fa-refresh"></i>
+            </button>
+        </div>
+    </section>
+    <section class="feed">
+        <div class="container">
+            <!--div class="controls">
+                <input type="field" value="#dolomiti" id="query" />
+                <input type="button" value="Update" />
+            </div-->
+            <div class="social-feed-container">
+            </div>
+        </div>
+    </section>
+    <section class="stripe">
+        
+    </section>
+    <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Codebird.js - required for TWITTER -->
+    <script src="bower_components/codebird-js/codebird.js"></script>
+    <!-- doT.js for rendering templates -->
+    <script src="bower_components/doT/doT.min.js"></script>
+    <!-- Moment.js for showing "time ago" -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <!-- Social-feed js -->
+    <script src="js/jquery.socialfeed.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        var updateFeed = function() {
+            var initialQuery = $('#query').val();
+            initialQuery = initialQuery.replace(" ", "");
+            var queryTags = initialQuery.split(",");
+            $('.social-feed-container').socialfeed({
+                // FACEBOOK
+//                facebook: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c'
+//                },
+//                // GOOGLEPLUS
+//                google: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg'
+//                },
+                // Twitter
+                twitter: {
+                    accounts: queryTags,
+                    limit: 4,
+                    consumer_key: 'KtoyjRNy9RgLaLo74UPy7yFg3', // make sure to have your app read-only
+                    consumer_secret: 'sxGECAv4VldCpzyN6IfzYEKF2LNN3dJgGPwcwLeHX5QPITWb42', // make sure to have your app read-only
+                },
+//                // VKONTAKTE
+//                vk: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    source: 'all'
+//                },
+                // INSTAGRAM
+                instagram: {
+                    accounts: queryTags,
+                    limit: 4,
+                    client_id: '88b4730e0e2c4b2f8a09a6184af2e218',
+                    access_token: '',
+                },
+
+                // GENERAL SETTINGS
+                length: 200,
+                show_media: true,
+                // Moderation function - if returns false, template will have class hidden
+                moderation: function(content) {
+                    return (content.text) ? content.text.indexOf('fuck') == -1 : true;
+                },
+                update_period: 5000,
+                 //When all the posts are collected and displayed - this function is evoked
+                callback: function() {
+                    console.log('all posts are collected');
+                }
+            });
+        };
+
+        updateFeed();
+        $('#button-update').click(function() {
+            //first, get rid of old data/posts.
+            $('.social-feed-container').html('');
+
+            //then load new posts
+            updateFeed();
+        });
+
+    });
+    </script>
+    <!-- Remove this part on your website. This is only to track the popularity of the Social-feed plugin website-->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-59783367-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+    
+     
+
+</html>

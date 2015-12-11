@@ -39,7 +39,7 @@
             $("#charlieInfo").stop().slideDown("slow");
         });
         $("#Charlie").mouseout(function(){
-            $("#charlieInfo").slideUp("slow");
+            $("#charlieInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
             });
         });
           
@@ -48,7 +48,7 @@
             $("#alexInfo").stop().slideDown("slow");
         });
         $("#Alex").mouseout(function(){
-            $("#alexInfo").slideUp("slow");
+            $("#alexInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
             });
         });
           
@@ -57,13 +57,13 @@
             $("#benInfo").stop().slideDown("slow");
         });
         $("#Ben").mouseout(function(){
-            $("#benInfo").slideUp("slow");
+            $("#benInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
             });
         });
           
         $(document).ready(function(){
         $("#Marcin").mouseover(function(){
-            $("#marcinInfo").stop().slideDown("slow");
+            $("#marcinInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
         });
         $("#Marcin").mouseout(function(){
             $("#marcinInfo").slideUp("slow");
@@ -83,6 +83,8 @@
                  <li id="homeButton"><a><a href="http://www.nujjltd.com/"><img src="Images/NujjHigherTop.png" id="icon" alt="Home"></a></li>
                  <li id="notHomeButton"><a class="big" data-scroll href="#OurProducts">Apps</a></li>
                  <li id="notHomeButton"><a class="big" data-scroll href="#ContactUs">Contact Us</a></li> 
+                 <li id="notHomeButton"><a class="big" href="/aboutPage.html">About Us</a></li>
+                 <li id="notHomeButton"><a class="big" href="/socialMedia.html">Social media</a></li>
                 </ul>
                 <a href="#" id="pull"></a>
             </nav>
@@ -110,7 +112,44 @@
           </div>
           
           
+          
+          <h1 id="secondHeader">The Nujj Story</h1>
+          
+          <p>Nujj Ltd is a start up technology company made up of students from the University of Bristol. We focus on producing applications that solve everyday problems that we believe need elegant solutions. <br>
+
+We are currently in the beta testing state for our first application, 'nujjReceipts', which aims to eradicate the use of paper receipts and revolutionise the safety, security and ease of the storage of proof of purchase.</p>
+          
+        
+          
+          <section>
+  <ul id='services'>
+      
+    <li>
+      <a href="mailto:info@nujjltd.com?" target="_top"><div class='entypo-mail' id="Email"></div></a>
+      <span>E-mail</span>
+    </li>
+    
+    <li>
+        <a href="https://www.facebook.com/nujjltd/" target="_blank"><div class='entypo-facebook' id="Facebook"></div></a>
+      <span>Facebook</span>
+    </li>
+    <li>
+      <a href="https://twitter.com/nujjltd" target="_blank" ><div class='entypo-twitter' id="Twitter"></div></a>
+      <span>Twitter</span>
+    </li>
+    <li>
+      <a href="https://instagram.com/nujjltd/" target="_blank"><div class='entypo-instagrem' id="Instagram"></div></a>
+      <span>Instagram</span>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/company/nujj-ltd" target="_blank"><div class='entypo-linkedin' id="Linkedin"></div></a>
+      <span>LinkedIn</span>
+    </li>
+  </ul>
+</section>
+          
       </div>
+      
       
       
       
