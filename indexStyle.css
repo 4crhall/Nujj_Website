@@ -100,10 +100,7 @@ nav li a {
 	-webkit-box-sizing:border-box;
 }
 
-nav li img {
-		width:30.5px;
-		height:30px;
-	}
+
 
 
 
@@ -157,8 +154,28 @@ nav a#pull {
 
 nav li {
 	display: inline;
-	float: center;
-} 
+	
+    
+}
+
+ul {
+    
+    height:100%;
+}
+
+
+
+
+nav li img {
+        position: relative;
+		width:30.5px;
+		height:30px;
+	}
+
+#notHomeButton {
+     position: relative;
+     top:-6px;
+}
 
 
 
@@ -444,6 +461,10 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 
 #Marcin {
 	margin-bottom: 5%;
+}
+
+#ContactUs{
+    text-align: center;
 }
 
 .Form {

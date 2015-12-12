@@ -94,7 +94,13 @@ nav li a {
 nav li img {
 		width:30.5px;
 		height:30px;
+    
 	}
+
+#notHomeButton {
+     position: relative;
+     top:-6px;
+}
 
 
 header {
@@ -372,3 +378,4 @@ header nav a {
     }
         
 }
+

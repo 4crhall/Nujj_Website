@@ -11,6 +11,11 @@ nav li a {
 	-webkit-box-sizing:border-box;
 }
 
+#notHomeButton {
+     position: relative;
+     top:-6px;
+}
+
 nav li img {
 		width:30.5px;
 		height:30px;
