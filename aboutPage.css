@@ -139,9 +139,12 @@ a:visited {
     color: #F6F6F6;
 }
 
+@media only screen {
+
 a:hover {
     text-decoration: none;
     font-size: 24px;
+}
 }
 
 a:active {

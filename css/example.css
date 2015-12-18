@@ -317,10 +317,13 @@ section.intro hr, .intro hr, .intro.stripe hr {
 		padding-top: 40px;
 	}
         
-        a:hover {
+@media only screen {
+        
+    a:hover {
     text-decoration: none;
     font-size: 120px;
-}
+    }
+                    }
 
 
 	nav li img {
