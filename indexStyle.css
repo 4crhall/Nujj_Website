@@ -133,8 +133,9 @@ header a:visited {
 @media only screen and (min-width:800px) {
 
 header a:hover {
-    text-decoration: none;
-    font-size: 24px;
+    text-decoration:none;
+    font-weight: bold;
+/*    font-size: 24px;*/
 }
     
 }
