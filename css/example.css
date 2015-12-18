@@ -306,6 +306,7 @@ section.intro hr, .intro hr, .intro.stripe hr {
 	}
 
 	nav li {
+        
 		display: block;
 		background-color: rgb(64,64,66);
 		opacity:1;
