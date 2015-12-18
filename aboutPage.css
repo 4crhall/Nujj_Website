@@ -143,7 +143,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    font-size: 24px;
+    font-weight: bold;
 }
 }
 
@@ -382,10 +382,7 @@ header nav a {
 		padding-top: 40px;
 	}
         
-        a:hover {
-    text-decoration: none;
-    font-size: 120px;
-}
+        
 
 
 	nav li img {
