@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+  	<link href="aboutPage.css" rel="stylesheet">
+   	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="Images/Nujj_Logo.png">
+
+    <meta name="viewport" content="user-scalable = yes">
+    
+    <meta name="keywords" content="design, iOS, javascript, app, swift, objective-c, reciepts, accounts, Nujj" />
+    <title>nujj ltd.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="modernizr.custom.js" ></script>
+    <script src="dist/js/smooth-scroll.js"></script>
+    <script src="Hover.js" ></script>
+
+    <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 600 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+      
+      <script>
+        $(document).ready(function(){
+        $("#Charlie").mouseover(function(){
+            $("#charlieInfo").stop().slideDown("slow");
+        });
+        $("#Charlie").mouseout(function(){
+            $("#charlieInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Alex").mouseover(function(){
+            $("#alexInfo").stop().slideDown("slow");
+        });
+        $("#Alex").mouseout(function(){
+            $("#alexInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Ben").mouseover(function(){
+            $("#benInfo").stop().slideDown("slow");
+        });
+        $("#Ben").mouseout(function(){
+            $("#benInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+            });
+        });
+          
+        $(document).ready(function(){
+        $("#Marcin").mouseover(function(){
+            $("#marcinInfo").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        });
+        $("#Marcin").mouseout(function(){
+            $("#marcinInfo").slideUp("slow");
+            });
+        });
+    </script>
+
+  </head>
+
+  
+  <body>
+      <div id="container">
+      
+          <header>
+            <nav>
+                <ul>
+                 <li id="homeButton"><a href="http://www.nujjltd.com/"><img src="Images/NujjHigherTop.png" id="icon" alt="Home"></a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="/index.html#OurProducts">Apps</a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="/index.html#ContactUs">Contact Us</a></li> 
+                 <li id="notHomeButton"><a class="big" href="/aboutPage.html">About Us</a></li>
+                 <li id="notHomeButton"><a class="big" href="/socialMedia.html">Social Media</a></li>
+                </ul>
+                <a href="#" id="pull"></a>
+            </nav>
+          </header>
+          
+          <h1 id="topHeader">The Team</h1>
+          
+          <div id="leftPicture">
+              <img id="Charlie" src="Images/Charlie.png">
+              <img id="Alex" src="Images/Alex.png">
+              <img id="Ben" src="Images/Ben.png">
+              <img id="Marcin" src="Images/Marcin.png">
+              <div class="info" id="charlieInfo"><h1><b>Charlie Hall</b> - Director of Finance</h1>
+              <p></p>
+              </div>
+              <div class="info" id="alexInfo"><h1><b>Alex Hewitt</b> - Managing Director</h1>
+              <p></p>
+              </div>
+              <div class="info" id="benInfo"><h1><b>Ben Fongenie</b> - Director of Business Development</h1>
+              <p></p>
+              </div>
+              <div class="info" id="marcinInfo"><h1><b>Marcin G&ograverny</b> - Director of Technology</h1>
+              <p></p>
+              </div>
+          </div>
+          
+          
+          
+          <h1 id="secondHeader">The nujj Story</h1>
+          
+          <p>Nujj Ltd is a start up technology company made up of students from the University of Bristol. We focus on producing applications that solve everyday problems that we believe need elegant solutions. <br>
+
+We have just released our first application, 'nujjReceipts', which aims to eradicate the use of paper receipts and revolutionise the safety, security and ease of the storage of proof of purchase. </p>
+              
+      
+<!--
+      <div class="Container">
+  
+    <h1>nujj Timeline</h1>
+  
+  
+  <ul class="timeline">
+    <li><div class="tldate">June 2014</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>nujj Ltd. Founded </h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>24th June 2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>nujj Ltd. was founded in the summer of 2014 by Alexander Hewitt, Benjamin Fongenie and Charlie Hall.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Breaking into Spring!</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 4/07/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Hope the weather gets a bit nicer...</p>
+            
+          <p>Y'know, with more sunlight.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">Mar 2014</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>New Apple Device Release Date</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/22/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>In memory of Steve Jobs.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>No icon here</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/16/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
+          
+          <p><img src="http://lorempixel.com/600/300/nightlife/" alt="lorem pixel"></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Some Important Date!</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/03/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Write up a quick summary of the event.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-panel noarrow">
+        <div class="tl-heading">
+          <h4>Secondary Timeline Box</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/01/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>This might be a follow-up post with related info. Maybe we include some extra links, tweets, user comments, photos, etc.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">Feb 2014</div></li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>The Winter Months</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/23/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Gee time really flies when you're having fun.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Yeah we're pretty much done here</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/11/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Wasn't this fun though?</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+          
+          </div>
+-->
+      
+      <section>
+  <ul id='services'>
+      
+    <li>
+      <a href="mailto:info@nujjltd.com?" target="_top"><div class='entypo-mail' id="Email"></div></a>
+      <span>E-mail</span>
+    </li>
+    
+    <li>
+        <a href="https://www.facebook.com/nujjltd/" target="_blank"><div class='entypo-facebook' id="Facebook"></div></a>
+      <span>Facebook</span>
+    </li>
+    <li>
+      <a href="https://twitter.com/nujjltd" target="_blank" ><div class='entypo-twitter' id="Twitter"></div></a>
+      <span>Twitter</span>
+    </li>
+    <li>
+      <a href="https://instagram.com/nujjltd/" target="_blank"><div class='entypo-instagrem' id="Instagram"></div></a>
+      <span>Instagram</span>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/company/nujj-ltd" target="_blank"><div class='entypo-linkedin' id="Linkedin"></div></a>
+      <span>LinkedIn</span>
+    </li>
+  </ul>
+</section>
+      
+      <div class="Footnote">
+          <p>&copy; Nujj Ltd 2015 <a href="Terms_and_Conditions.html">Terms and Conditions</a></p>
+      </div>
+          
+          
+      
+      
+      
+      
+      
+  </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+  	<link href="indexStyle.css" rel="stylesheet">
+   	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="Images/Nujj_Logo.png">
+
+    <meta name="viewport" content="user-scalable = yes">
+    
+    <meta name="keywords" content="design, iOS, javascript, app, swift, objective-c, reciepts, accounts, Nujj" />
+    <title>nujj ltd.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="modernizr.custom.js" ></script>
+    
+
+
+
+  </head>
+
+  
+  <body>
+      
+      <script>
+    function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+  {
+    window.location.replace("https://itunes.apple.com/gb/app/nujjreceipts/id1057023005?mt=8");
+    return 'iOS';
+
+  }
+  else if( userAgent.match( /Android/i ) )
+  {
+    window.location.replace("http://play.google.com/apps/testing/com.nujjltd.nujjreceipts");
+    return 'Android';
+  }
+  else
+  {
+    window.location.replace("http://www.nujjltd.com");
+    return 'unknown';
+  }
+}
+          window.onload = getMobileOperatingSystem();
+  </script>
+  
+  </body>
+</html>
+

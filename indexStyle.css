@@ -1,27 +1,146 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+}
+
+section #services li {
+  width: 120px;
+  height: 140px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style: none;
+}
+section #services li div {
+  width: 100px;
+  height: 100px;
+/*  color: white;*/
+  font-size: 70px;
+  text-align: center;
+  line-height: 100px;
+/*  background-color: rgb(64,64,66);*/
+  transition: all 0.5s ease;
+}
+
+section a{
+    text-decoration: none;
+}
+
+section #services li #Email {
+  color: white;
+  background-color: rgb(64,64,66);
+}
+
+section #services li #Facebook {
+  color: white;
+  background-color: rgb(58,88,155);
+}
+
+section #services li #Twitter {
+  color: white;
+  background-color: rgb(80,171,241);
+}
+
+section #services li #Instagram {
+  color: White;
+  background-color: rgb(166,125,93);
+}
+
+section #services li #Linkedin {
+  color: white;
+  background-color: rgb(0,128,193);
+}
+
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+
+section #services li span {
+  width: 100px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: rgb(64,64,66);
+  font-size: 1.2em;
+  text-align: center;
+}
+
 body {
 	margin-right: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-
+    color: black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-a:link {
+.Terms_and_Conditions {
+    padding-top: 100px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#TandC {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+
+
+
+
+header {
+	position: fixed;
+	background-color: rgb(64,64,66);
+	/*opacity:0.9;*/
+	top: 0;
+	z-index: 10;
+}
+
+
+
+#container{
+    margin-top:0px;
+    padding-top: 0px;
+	width:100%;
+}
+
+header a:link {
     text-decoration: none;
     color: #F6F6F6;
 }
 
-a:visited {
+header a:visited {
     text-decoration: none;
     color: #F6F6F6;
 }
 
-a:hover {
-    text-decoration: none;
-    font-size: 24px;
+@media only screen and (min-width:800px) {
+
+header a:hover {
+    text-decoration:none;
+    font-weight: bold;
+/*    font-size: 24px;*/
+}
+    
 }
 
-a:active {
+header a:active {
 	color: #F6F6F6;
     text-decoration: none;
 }
@@ -30,53 +149,56 @@ h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	font-size: 40px;
-	margin-top: 20px;
 }
 
 
-#NujjLogo {
-	text-align: center;
-	padding-bottom: 10px;
-	height:auto;
+
+nav a#pull {
+    display: none;
+} 
+
+nav li {
+	display: inline;
+	
+    
 }
 
-#top {
-	text-align: justify;
-	height:auto;
+ul {
+    
+    height:100%;
 }
 
-#top > h2,
-#top > p {
-	display: inline-block;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #F6F6F6;
+
+
+
+nav li img {
+        position: relative;
+		width:30.5px;
+		height:30px;
+	}
+
+#notHomeButton {
+     position: relative;
+     top:-6px;
 }
 
-#top > p {
-	font-size: 24px;
-}
-
-#top::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
 
 
 header {
 	text-align: center;
 	width: 100%;
 	font-size: 20px;
+    
 }
 
 header > nav {
-	vertical-align: center;
+	height: 42px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #F6F6F6;
 }
 
 header nav a {
-    padding: 0 0.6em;
+    padding: 0 2.5%;
     white-space: nowrap;
     -webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -84,67 +206,40 @@ header nav a {
 }
 
 
-.cbp-af-header {
-	background-image: url('Images/stepping-stones.jpg') top left no-repeat;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
-	top:0px;
-	background-color: #767677;
-	-webkit-transition: height 0.5s;
-	-moz-transition: height 0.5s;
-	transition: height 0.5s;
-}
 
-.cbp-af-header .cbp-af-inner {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 0 1.875em;
+#TopHeader {
+    color: white;
+	padding-top:30px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
 }
-
-.cbp-af-header #top,
-.cbp-af-header #top h2,
-.cbp-af-header #top p,
-.cbp-af-header #NujjLogo {
-	height:100px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.cbp-af-header.cbp-af-header-shrink #top,
-.cbp-af-header.cbp-af-header-shrink #top h2,
-.cbp-af-header.cbp-af-header-shrink #top p,
-.cbp-af-header.cbp-af-header-shrink #NujjLogo {
-	height: 15px;
-	color: #767677;
-}
-
-.cbp-af-header.cbp-af-header-shrink #top h2,
-.cbp-af-header.cbp-af-header-shrink #top p,
-.cbp-af-header.cbp-af-header-shrink #NujjLogo {
-	opacity: 0;
-}
-
 
 #OurProducts {
-	margin-top: 150px;
+    text-align: center;
+    background-color: rgb(64,64,66);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 15px;
 }
 
 .pictureContainer {
-    width:25vw;
-    height:25vw;
+    width:350px;
+    height:350px;
     overflow: hidden;
 }
 
-#NujjAccounts,
+.pictures_inline {
+	width: 100%;
+    margin-bottom: 20px;
+    white-space:nowrap;
+}
+
 #NujjReceipts  {
+    text-align: center;
+    font-size: 24px;
+    color: white;
 	display: inline-block;
-	margin-left: 12.4%;
-	margin-right: 12.4%;
-	margin-top: 10%;
-	margin-bottom: 10%;
 }
 
 
@@ -153,25 +248,122 @@ header nav a {
 	top:0;
 	width:100%;
 	height:auto;
-	transition: top 0.4s ease-in-out;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+    -webkit-transition-timing-function: cubic-bezier(0,0,0.2,1);
+    -moz-transition-timing-function: cubic-bezier(0,0,0.2,1);
+    transition-timing-function: cubic-bezier(0,0,0.2,1);
 }
 
 #NujjReceipts .pictureContainer img:hover{
-	top: -25vw;
+	top: -350px;
+}
+
+#NujjReceipts a {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    
+/*    background-color: rgb(90,90,90)*/
+}
+
+#NujjReceipts a:hover {
+    background-color: rgb(90,90,90);
+}
+
+#ReceiptsDescription .Left {
+    float: left;
+    width: 50vw;
+}
+
+#ReceiptsDescription .Left h2 {
+    padding-left: 100px;
+    font-size: 32px;
+}
+
+#ReceiptsDescription .Left p {
+    
+    padding-left: 100px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#ReceiptsDescription .Left b {
+    
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 
-#NujjAccounts > .pictureContainer img {
-	position: relative;
-	top:0;
-	width:100%;
-	height:auto;
-	transition: top 0.4s ease-in-out;
+
+#ReceiptsDescription .Left p:hover {
+    color: black;
 }
 
-#NujjAccounts .pictureContainer img:hover{
-	top: -25vw;
+#ReceiptsDescription .Left p b:hover {
+    font-size: 21px;
 }
+
+
+
+#ReceiptsDescription .Right {
+    float:right;
+    width: 50vw;
+    text-align: center;
+}
+
+#ReceiptsDescription .Right h2{
+    text-align: left;
+    padding-left: 60px;
+    font-size: 32px;
+}
+
+#ReceiptsDescription .Right p {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+#ReceiptsDescription .Right b {
+    
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+
+#ReceiptsDescription .Right p:hover {
+    color: black;
+}
+
+#ReceiptsDescription .Right p b:hover {
+    font-size: 24px;
+}
+
 
 /** blockquote styles **/
 .bq3 { 
@@ -186,30 +378,31 @@ header nav a {
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: #767676; 
-	font-size: 20px;
-	line-height: 40px; }
+	color: rgb(130,130,130); 
+	font-size: 18px;
+	line-height: 2em; }
 
 .bq3 > p:hover {
 	font-family: 'Josefin Sans', sans-serif;
 	padding-right: 35px;  
 	background: url('Images/Quote_up.png') bottom right no-repeat; 
 	padding-bottom: 0px; 
-	color: #333;  
+	color: black;  
 	transition: color 0.4s;
 	line-height: auto;
 }
 
 .bq3 > h6 { 
 	font-family: 'Josefin Sans', sans-serif;
-	color: #333; 
+	color: white; 
 	font-weight: bold;
 	font-size: 20px; }
 
 
 hr { width:70%; height:1px; background: #fff; text-align: center; }
 
-.Person > #image {
+.Person > #image
+{
 	width: 50%;
 	font-family: 'Josefin Sans', sans-serif;
 	height:auto;
@@ -231,17 +424,25 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 .Person > #image > img {
-	width:50%;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-bottom: 6.25%;
+	width:40%;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 
+/*
 .Person > #image,
 .Person > blockquote {
 	display: inline-block;
 	vertical-align: middle;
 }
+*/
+
+
+
+
+
+
+
 
 #PrincipleOne h2{
 	margin-top: 25px;
@@ -252,6 +453,8 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	font-size: 26px;
 }
 
+
+
 #PrincipleOne p{
 	margin-top: 25px;
 	margin-left: 25px;
@@ -261,23 +464,419 @@ hr { width:70%; height:1px; background: #fff; text-align: center; }
 	font-size: 24px;
 }
 
-@media screen and (max-width: 720px){
+#Marcin {
+	margin-bottom: 5%;
+}
+
+#ContactUs{
+    text-align: center;
+}
+
+.Form {
+    text-align: center;
+}
+
+.Footnote {
+    color:black;
+    text-align: center;
+}
+
+.Footnote a:link {
+    text-decoration: underline;
+    color: black;
+}
+
+.Footnote a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+.Footnote a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.Footnote a:active {
+	color: black;
+    text-decoration: underline;
+}
+
+
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) 
+    and (width : 375px) 
+    and (height : 559px) 
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2), screen and (max-device-width: 1200px), screen and (max-width: 1200px){
+        
+
+body {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+    color: black;
+}
+
+.Person {
+	width: 100%;
+    text-align: center;
+}
+    
+ .Person > #image {
+	font-family: 'Josefin Sans', sans-serif;
+	height: auto;
+}
+
+.Person > #image > h6 {
+	line-height: 25px;
+	font-weight: normal;
+	text-align: Center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.Person > #image > h6 > b {
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 24;
+
+}
+
+.Person > #image > img {
+	text-align: center;
+    width: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.Person > blockquote {
+	width: 80%;
+	text-align: center;
+	font-size: 5vw;
+}
+        
+
+
+.bq3 { 
+	background: none;
+	color: #575757;
+    margin-left: 0px;
+}
+
+.bq3 > p { 
+	font-family: 'Josefin Sans', sans-serif;
+	background: none;
+	color: black;}
+
+.bq3 > p:hover {
+	font-family: 'Josefin Sans', sans-serif;
+	background: none; 
+	color: black;   }
+    
+}
+
+
+@media screen and (max-width : 800px) {
     
     header {
-        height: auto;
-    }
-
-    body{
-    	text-align: center;
+        background-color: none;
+        height: 80px;
     }
     
-    header > div,
-    header > div img,
-    header nav {
-        height: auto;
-        width: auto;
+
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		background-color: rgb(64,64,66);
+		opacity:1;
+		float: none;
+		width: 100%;
+        font-size: 30px;
+		border-bottom: 1px solid white;
+		padding-bottom: 7.5px;
+		padding-top: 10px;
+	}
+
+
+	nav li img {
+		margin-right: 5%;
+
+		
+	}
+    
+
+	nav a#pull {
         display: block;
-        text-align: center;
+        width: 100%;
+        height: 80px;
+        
     }
+        
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 30.5px 30px;
+        display: inline-block;
+        position: absolute;
+        width:31px;
+		height:31px;
+        right: 10px;
+        top: 5px;
+        bottom: 10px;
+    }
+    
+    
+    
+    #ReceiptsDescription .Left {
+    float: left;
+    width: 100vw;
+    }
+    
+    #ReceiptsDescription .Left h2 {
+        padding-left: 60px;
+    }
+    
+    #ReceiptsDescription .Left p {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+        
+    
+    #ReceiptsDescription .Right {
+    float:right;
+    width: 100vw;
+    text-align: center;
+    }
+    
+    #OurProducts {
+    text-align: center;
+    background-color: rgb(64,64,66);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 1px;
+}
+
+    .pictureContainer {
+    width:250px;
+    height:250px;
+    overflow: hidden;
+}
+
+    .pictures_inline {
+	width: 100%;
+    white-space:nowrap;
+}
+
+    #NujjReceipts  {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+	display: inline-block;
+}
+
+
+    #NujjReceipts .pictureContainer img {
+	position: relative;
+	top:0;
+	width:100%;
+	height:auto;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+    
+    #NujjReceipts .pictureContainer img:hover{
+	top: 0px;
+}
+
+    
+}
+
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) 
+    and (width : 375px) 
+    and (height : 559px)
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+    .Terms_and_Conditions {
+    padding-top: 150px;
+    font-size: 26px;
+    text-align: center;
+    }
+        
+        
+    #TopHeader {
+    color: white;
+	padding-top:160px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+        }
+    
+    header {
+        background-color: none;
+        height: 160px;
+    }
+    
+
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		background-color: rgb(64,64,66);
+		opacity:1;
+		float: none;
+		width: 100%;
+        font-size: 120px;
+		border-bottom: 1px solid white;
+		padding-bottom: 30px;
+		padding-top: 40px;
+	}
+        
+
+
+	nav li img {
+		margin-right: 5%;
+
+		
+	}
+    
+
+	nav a#pull {
+        display: block;
+        width: 100%;
+        height: 80px;
+        
+    }
+        
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 121px 120px;
+        display: inline-block;
+        position: absolute;
+        width:124px;
+		height:124px;
+        right: 40px;
+        top: 20px;
+        bottom: 20px;
+    }
+        
+    #ReceiptsDescription .Left {
+    float: left;
+    width: 100vw;
+    }
+        
+    #ReceiptsDescription .Left h2 {
+        padding-left: 60px;
+    }
+    
+    #ReceiptsDescription .Left p {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+        
+    #ReceiptsDescription .Right {
+    float:right;
+    width: 100vw;
+    text-align: center;
+    }
+        
+        
+    
+    #OurProducts {
+    text-align: center;
+    background-color: rgb(64,64,66);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 60px;
+}
+
+    .pictureContainer {
+    width:250px;
+    height:250px;
+    overflow: hidden;
+}
+
+    .pictures_inline {
+	width: 100%;
+    margin-bottom: 5%;
+    white-space:nowrap;
+}
+
+    #NujjReceipts  {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+	display: inline-block;
+}
+
+
+    #NujjReceipts .pictureContainer img {
+	position: relative;
+	top:0;
+	width:100%;
+	height:auto;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+    
+    #NujjReceipts .pictureContainer img:hover{
+	top: 0px;
+}
+
     
 }
