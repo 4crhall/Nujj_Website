@@ -198,12 +198,12 @@ header nav a {
 }
 
 #leftPicture img {
-    width: 12.5vw;
+    width: 15vw;
     padding-left: 0vw;
     padding-right: 0vw;
-    margin-left: 10vw;
+    margin-left: 13.75vw;
     margin-right: 0px;
-    height: 12.5vw;
+    height: 15vw;
      -webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
 	transition: all 0.4s;
@@ -212,7 +212,7 @@ header nav a {
     border-radius: 20px;
 }
 
-#marcin img {
+#ben img {
     margin-right: 10vw;
 }
 
