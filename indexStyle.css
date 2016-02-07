@@ -260,11 +260,18 @@ header nav a {
 	top: -350px;
 }
 
-#NujjReceipts a {
+.apple {
+   text-align: center;
+    margin-bottom: 10px;
+}
+
+.android{
+    text-align: center;
     text-decoration: none;
     color: white;
+    top: 0px;
     padding-top: 5px;
-    padding-bottom: 3px;
+    padding-bottom:3px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
