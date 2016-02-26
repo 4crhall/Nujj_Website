@@ -407,7 +407,7 @@ header nav a {
 	font-size: 20px; }
 
 
-hr { width:70%; height:1px; background: #fff; text-align: center; }
+hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
 
 .Person > #image
 {
