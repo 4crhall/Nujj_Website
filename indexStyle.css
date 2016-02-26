@@ -290,8 +290,9 @@ header nav a {
 }
 
 #ReceiptsDescription .Left {
+    clear: both;
     float: left;
-    width: 50vw;
+    width: 50%;
 }
 
 #ReceiptsDescription .Left h2 {
@@ -333,7 +334,7 @@ header nav a {
 
 #ReceiptsDescription .Right {
     float:right;
-    width: 50vw;
+    width: 50%;
     text-align: center;
 }
 
