@@ -4,6 +4,20 @@
   font-family: 'entypo', sans-serif;
 }
 
+.primary {
+    padding-top: 80px;
+    font-size: 35px;
+}
+
+.secondary {
+    font-size: 28px;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 section #services {
   text-align: center;
@@ -114,6 +128,8 @@ header {
 
 
 
+
+
 #container{
     margin-top:0px;
     padding-top: 0px;
@@ -211,7 +227,7 @@ header nav a {
     color: white;
 	padding-top:30px;
     margin-top: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
 }
 
@@ -221,18 +237,62 @@ header nav a {
     padding-top: 0px;
     margin-top: 0px;
     padding-bottom: 15px;
+
+}
+
+#learn_more {
+    padding-top: 10px;
+}
+
+#OurProducts p {
+    margin-bottom: 10px;
+}
+
+.learn_more{
+    text-align: center;
+    text-decoration: none;
+    color: palegreen;
+    top: 0px;
+    font-size: 24px;
+    margin-bottom: 10px;;
+    padding-top: 10px;
+    padding-bottom:6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: palegreen;
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    
+/*    background-color: rgb(90,90,90)*/
+}
+
+.learn_more:hover{
+    
+    color: greenyellow;
+    border-color: greenyellow;
+    background-color: rgb(100,100,100);
+    
+    
+/*    background-color: rgb(90,90,90)*/
 }
 
 .pictureContainer {
-    width:350px;
-    height:350px;
+    width:250px;
+    height:250px;
     overflow: hidden;
 }
 
 .pictures_inline {
-	width: 100%;
     margin-bottom: 20px;
     white-space:nowrap;
+}
+
+.nujjReceipts {
+    margin-top: 10px;
 }
 
 #NujjReceipts  {
@@ -257,7 +317,7 @@ header nav a {
 }
 
 #NujjReceipts .pictureContainer img:hover{
-	top: -350px;
+	top: -250px;
 }
 
 .apple {
@@ -265,19 +325,33 @@ header nav a {
     margin-bottom: 10px;
 }
 
-.android{
+.ReceiptsDescription {
+    width: 100vw;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+
+.ReceiptsDescription .apple {
+    margin-bottom: 20px;
+}
+
+.ReceiptsDescription .android{
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: black;
     top: 0px;
-    padding-top: 5px;
-    padding-bottom:3px;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 24px;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom:6px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
     -webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
@@ -285,22 +359,33 @@ header nav a {
 /*    background-color: rgb(90,90,90)*/
 }
 
-#NujjReceipts a:hover {
+.android:hover {
     background-color: rgb(90,90,90);
 }
 
-#ReceiptsDescription .Left {
+.ReceiptsDescription p {
+    text-align: center;
+    color: black;
+}
+
+.ReceiptsDescription a {
+    text-align: center;
+}
+
+
+.ReceiptsDescription .Left {
     clear: both;
     float: left;
     width: 50%;
 }
 
-#ReceiptsDescription .Left h2 {
+.ReceiptsDescription .Left h2 {
     padding-left: 100px;
     font-size: 32px;
+    text-align: left;
 }
 
-#ReceiptsDescription .Left p {
+.ReceiptsDescription .Left p {
     
     padding-left: 100px;
     padding-right: 60px;
@@ -313,7 +398,7 @@ header nav a {
 	transition: all 0.4s;
 }
 
-#ReceiptsDescription .Left b {
+.ReceiptsDescription .Left b {
     
     -webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -322,29 +407,29 @@ header nav a {
 
 
 
-#ReceiptsDescription .Left p:hover {
+.ReceiptsDescription .Left p:hover {
     color: black;
 }
 
-#ReceiptsDescription .Left p b:hover {
+.ReceiptsDescription .Left p b:hover {
     font-size: 21px;
 }
 
 
 
-#ReceiptsDescription .Right {
+.ReceiptsDescription .Right {
     float:right;
     width: 50%;
     text-align: center;
 }
 
-#ReceiptsDescription .Right h2{
+.ReceiptsDescription .Right h2{
     text-align: left;
     padding-left: 60px;
     font-size: 32px;
 }
 
-#ReceiptsDescription .Right p {
+.ReceiptsDescription .Right p {
     padding-left: 60px;
     padding-right: 60px;
     font-size: 22px;
@@ -356,7 +441,7 @@ header nav a {
 	transition: all 0.4s;
 }
 
-#ReceiptsDescription .Right b {
+.ReceiptsDescription .Right b {
     
     -webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -364,11 +449,11 @@ header nav a {
 }
 
 
-#ReceiptsDescription .Right p:hover {
+.ReceiptsDescription .Right p:hover {
     color: black;
 }
 
-#ReceiptsDescription .Right p b:hover {
+.ReceiptsDescription .Right p b:hover {
     font-size: 24px;
 }
 
@@ -485,8 +570,18 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
 }
 
 .Footnote {
+    text-align: center;
+}
+
+.Footnote p {
+    color: black;
+    font-size: 16px;
+}
+
+.Footnote a {
     color:black;
     text-align: center;
+    font-size: 16px;
 }
 
 .Footnote a:link {
@@ -507,6 +602,12 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
 .Footnote a:active {
 	color: black;
     text-decoration: underline;
+}
+
+.infoPictures img {
+    clear: both;
+    padding-left: 10vw;
+    width: 12.5vw;
 }
 
 
@@ -654,16 +755,16 @@ body {
     
     
     
-    #ReceiptsDescription .Left {
+    .ReceiptsDescription .Left {
     float: left;
     width: 100vw;
     }
     
-    #ReceiptsDescription .Left h2 {
+    .ReceiptsDescription .Left h2 {
         padding-left: 60px;
     }
     
-    #ReceiptsDescription .Left p {
+    .ReceiptsDescription .Left p {
     
     padding-left: 60px;
     padding-right: 60px;
@@ -677,13 +778,14 @@ body {
 }
         
     
-    #ReceiptsDescription .Right {
+    .ReceiptsDescription .Right {
     float:right;
     width: 100vw;
     text-align: center;
     }
     
     #OurProducts {
+    
     text-align: center;
     background-color: rgb(64,64,66);
     padding-top: 0px;
@@ -697,10 +799,7 @@ body {
     overflow: hidden;
 }
 
-    .pictures_inline {
-	width: 100%;
-    white-space:nowrap;
-}
+    
 
     #NujjReceipts  {
     text-align: center;
@@ -814,16 +913,16 @@ body {
         bottom: 20px;
     }
         
-    #ReceiptsDescription .Left {
+    .ReceiptsDescription .Left {
     float: left;
     width: 100vw;
     }
         
-    #ReceiptsDescription .Left h2 {
+    .ReceiptsDescription .Left h2 {
         padding-left: 60px;
     }
     
-    #ReceiptsDescription .Left p {
+    .ReceiptsDescription .Left p {
     
     padding-left: 60px;
     padding-right: 60px;
@@ -836,7 +935,7 @@ body {
 	transition: all 0.4s;
 }
         
-    #ReceiptsDescription .Right {
+    .ReceiptsDescription .Right {
     float:right;
     width: 100vw;
     text-align: center;
@@ -858,18 +957,9 @@ body {
     overflow: hidden;
 }
 
-    .pictures_inline {
-	width: 100%;
-    margin-bottom: 5%;
-    white-space:nowrap;
-}
+    
 
-    #NujjReceipts  {
-    text-align: center;
-    font-size: 24px;
-    color: white;
-	display: inline-block;
-}
+    
 
 
     #NujjReceipts .pictureContainer img {
