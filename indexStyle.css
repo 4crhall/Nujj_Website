@@ -738,8 +738,7 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
         
-    
-    header {
+     header {
         background-color: none;
         height: 80px;
     }
@@ -881,4 +880,6 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
     #OurProducts .nujjReceipts {
     padding-top: 40px
 }
+
+    
 }
