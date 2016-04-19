@@ -31,12 +31,14 @@
     width: 100%;
     bottom: 0;
     position: absolute;
+    overflow: hidden;
 }
 .video-container .filter {
     z-index:-1 ;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -45,6 +47,7 @@
     position: absolute;
     z-index: -1;
     bottom: 0;
+    overflow: hidden;
 }
 .video-container video.fillWidth {
     width: 100%;
