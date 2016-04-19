@@ -726,4 +726,159 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
     
 }
 
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) 
+    and (width : 375px) 
+    and (height : 559px)
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2), only screen and (max-device-width : 800px) {
+        
+    
+    header {
+        background-color: none;
+        height: 80px;
+    }
+    
 
+	nav {
+		position:relative;
+		display: block;
+		float: none;
+		height: auto;
+	}
+
+	nav ul {
+		padding: 0;
+		display: none;
+		float: none;
+	}
+
+	nav li {
+		display: block;
+		background-color: rgba(64,64,66,0.8);
+		opacity:1;
+		float: none;
+		width: 100%;
+        font-size: 30px;
+		border-bottom: 1px solid white;
+		padding-bottom: 7.5px;
+		padding-top: 10px;
+	}
+
+
+	nav li img {
+		margin-right: 5%;
+
+		
+	}
+    
+
+	nav a#pull {
+        display: block;
+        width: 100%;
+        height: 80px;
+        
+    }
+        
+    nav a#pull:after {
+        content:"";
+        background: url('Images/nav-icon.png') no-repeat;
+        background-size: 30.5px 30px;
+        display: inline-block;
+        position: absolute;
+        width:31px;
+		height:31px;
+        right: 10px;
+        top: 5px;
+        bottom: 10px;
+    }
+    
+    
+    
+    
+    .ReceiptsDescription .Left {
+    float: left;
+    width: 100vw;
+    }
+    
+    .ReceiptsDescription .Left h2 {
+        padding-left: 60px;
+    }
+    
+    .ReceiptsDescription .Left p {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #575757;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+        
+    
+    .ReceiptsDescription .Right {
+    float:right;
+    width: 100vw;
+    text-align: center;
+    }
+    
+    #OurProducts {
+    
+    text-align: center;
+    background-color: rgb(64,64,66);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 1px;
+}
+
+    .pictureContainer {
+    width:250px;
+    height:250px;
+    overflow: hidden;
+}
+
+    
+
+    #NujjReceipts  {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+	display: inline-block;
+}
+
+
+    #NujjReceipts .pictureContainer img {
+	position: relative;
+	top:0;
+	width:100%;
+	height:auto;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+    
+    #NujjReceipts .pictureContainer img:hover{
+	top: 0px;
+}
+    
+    
+    video {
+        display: none;
+    }
+    
+    header {
+	background-color: rgb(64,64,66);
+}
+    
+    #OurProducts .nujjReceipts {
+    padding-top: 40px
+}
+}
