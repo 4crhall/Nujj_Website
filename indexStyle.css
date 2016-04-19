@@ -8,14 +8,17 @@
     border-right: none;
     border-left: none;
     position: relative;
+    overflow: hidden;
 }
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
+    overflow: hidden;
 }
 .no-video .video-container .poster,
 .touch .video-container .poster {
     display: block !important;
+    overflow: hidden;
 }
 .video-container {
     position: relative;
