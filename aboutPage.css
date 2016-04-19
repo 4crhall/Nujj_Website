@@ -197,43 +197,93 @@ header nav a {
     color: black;
 }
 
-#leftPicture img {
-    width: 15vw;
+.directors {
+    text-align: center;
+}
+
+.directors h2{
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-bottom: 3px;
+}
+
+.directors h3{
+    margin-top: 5px;
+    padding-top: 0px;
+}
+
+.directors div {
+    white-space: none;
+    display: inline-block;
     padding-left: 0vw;
     padding-right: 0vw;
-    margin-left: 13.75vw;
+    margin-left: 5vw;
     margin-right: 0px;
-    height: 15vw;
-     -webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	transition: all 0.4s;
-    white-space: none;
-    display: inline-block; 
+}
+
+.directors img {
+    width: 12vw;
+    height: 12vw; 
     border-radius: 20px;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-left: 0vw;
+    margin-right: 0px;
 }
 
-#ben img {
-    margin-right: 10vw;
+.directors .Charlie {
+    margin-left: 0vw;
 }
 
-#leftPicture img:hover {
-    background-color: rgb(64,64,66);
+
+.Volunteers {
+    text-align: center;
+    margin-top: 30px;
 }
 
-#leftPicture .info {
-    width:100vw;
-    display: none;
-    float:left;
+.Volunteers h2{
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-bottom: 3px;
 }
 
-#leftPicture h1,p {
-    text-align: left;
-    padding-left: 10px;
+.Volunteers h3{
+    margin-top: 5px;
+    padding-top: 0px;
 }
-#secondHeader {
-    width: 100vw;
-    margin-top:20px;
+
+.Volunteers div {
+    white-space: none;
+    display: inline-block;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-left: 5vw;
+    margin-right: 0px;
 }
+
+.Volunteers img {
+    width: 12vw;
+    height: 12vw; 
+    border-radius: 20px;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-left: 0vw;
+    margin-right: 0px;
+}
+
+.Volunteers .Vicky {
+    margin-left: 0vw;
+}
+
+.Volunteers .Rob {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+
+
+
 
 .Footnote p {
     text-align: center;

@@ -4,8 +4,58 @@
   font-family: 'entypo', sans-serif;
 }
 
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index:-1 ;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+
+
+.video-container video {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+
 .primary {
-    padding-top: 80px;
+    margin-top: 60px;
+    padding-top: 100px;
     font-size: 35px;
 }
 
@@ -92,8 +142,7 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-    color: black;
-    background-color: white;
+    padding-top: 0px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -120,7 +169,7 @@ nav li a {
 
 header {
 	position: fixed;
-	background-color: rgb(64,64,66);
+	background-color: rgba(64,64,66,0.8);
 	/*opacity:0.9;*/
 	top: 0;
 	z-index: 10;
@@ -147,6 +196,7 @@ header a:visited {
 }
 
 @media only screen and (min-width:800px) {
+    
 
 header a:hover {
     text-decoration:none;
@@ -222,36 +272,36 @@ header nav a {
 }
 
 
-
-#TopHeader {
-    color: white;
-	padding-top:30px;
+#container .homepage-hero-module {
     margin-top: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-}
-
-#OurProducts {
-    text-align: center;
-    background-color: rgb(64,64,66);
     padding-top: 0px;
-    margin-top: 0px;
+}
+
+#container #OurProducts {
+    text-align: center;
+    background-color: rgba(64,64,66,0.8);
+    padding-top: 0px;
+    margin-top: 62px;
     padding-bottom: 15px;
+    z-index: 10;
 
 }
 
-#learn_more {
-    padding-top: 10px;
+
+
+#OurProducts .primary {
+    padding-top: 60px
 }
 
-#OurProducts p {
-    margin-bottom: 10px;
+#OurProducts .nujjReceipts {
+    padding-top: 60px
 }
 
 .learn_more{
     text-align: center;
     text-decoration: none;
     color: palegreen;
+    margin-top: 0px;
     top: 0px;
     font-size: 24px;
     margin-bottom: 10px;;
@@ -284,6 +334,7 @@ header nav a {
     width:250px;
     height:250px;
     overflow: hidden;
+    
 }
 
 .pictures_inline {
@@ -326,10 +377,21 @@ header nav a {
 }
 
 .ReceiptsDescription {
+    padding-top: 0px;
     width: 100vw;
     float: left;
     height: auto;
     text-align: center;
+}
+
+.ReceiptsDescription .upperDescription {
+    padding-top: 30px;
+    background-color: rgb(64,64,64);
+}
+
+.ReceiptsDescription .upperDescription p{
+    color: white;
+    margin-top: 0px;
 }
 
 
@@ -340,7 +402,7 @@ header nav a {
 .ReceiptsDescription .android{
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
     top: 0px;
     font-size: 24px;
     margin-bottom: auto;
@@ -351,7 +413,7 @@ header nav a {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     -webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
@@ -458,108 +520,10 @@ header nav a {
 }
 
 
-/** blockquote styles **/
-.bq3 { 
-	width: 400px; 
-	background: url('Images/Quote_down.png') top left no-repeat; 
-	padding-left: 55px; 
-	color: #575757; 
-}
-
-.bq3 > p { 
-	font-family: 'Josefin Sans', sans-serif;
-	padding-right: 35px;  
-	background: url('Images/Quote_up.png') bottom right no-repeat; 
-	padding-bottom: 0px; 
-	color: rgb(130,130,130); 
-	font-size: 18px;
-	line-height: 2em; }
-
-.bq3 > p:hover {
-	font-family: 'Josefin Sans', sans-serif;
-	padding-right: 35px;  
-	background: url('Images/Quote_up.png') bottom right no-repeat; 
-	padding-bottom: 0px; 
-	color: black;  
-	transition: color 0.4s;
-	line-height: auto;
-}
-
-.bq3 > h6 { 
-	font-family: 'Josefin Sans', sans-serif;
-	color: white; 
-	font-weight: bold;
-	font-size: 20px; }
-
 
 hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
 
-.Person > #image
-{
-	width: 50%;
-	font-family: 'Josefin Sans', sans-serif;
-	height:auto;
-}
 
-.Person > #image > h6 {
-	line-height: 25px;
-	font-weight: normal;
-	text-align: Center;
-	font-size: 20px;
-	font-style: italic;
-}
-
-.Person > #image > h6 > b {
-	font-weight: bolder;
-	font-style: normal;
-	font-size: 24;
-
-}
-
-.Person > #image > img {
-	width:40%;
-	margin-left: 30%;
-	margin-right: 30%;
-}
-
-/*
-.Person > #image,
-.Person > blockquote {
-	display: inline-block;
-	vertical-align: middle;
-}
-*/
-
-
-
-
-
-
-
-
-#PrincipleOne h2{
-	margin-top: 25px;
-	margin-left: 25px;
-	margin-right: 25px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: bold;
-	font-size: 26px;
-}
-
-
-
-#PrincipleOne p{
-	margin-top: 25px;
-	margin-left: 25px;
-	margin-right: 25px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: Light;
-	font-size: 24px;
-}
-
-#Marcin {
-	margin-bottom: 5%;
-}
 
 #ContactUs{
     text-align: center;
@@ -715,7 +679,7 @@ body {
 
 	nav li {
 		display: block;
-		background-color: rgb(64,64,66);
+		background-color: rgba(64,64,66,0.8);
 		opacity:1;
 		float: none;
 		width: 100%;
@@ -752,6 +716,7 @@ body {
         top: 5px;
         bottom: 10px;
     }
+    
     
     
     
@@ -822,6 +787,20 @@ body {
     #NujjReceipts .pictureContainer img:hover{
 	top: 0px;
 }
+    
+    
+    video {
+        display: none;
+    }
+    
+    header {
+	background-color: rgb(64,64,66);
+}
+    
+    #OurProducts .nujjReceipts {
+    padding-top: 40px
+}
+
 
     
 }
