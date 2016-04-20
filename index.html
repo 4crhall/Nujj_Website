@@ -15,73 +15,6 @@
     <script src="modernizr.custom.js" ></script>
     <script src="dist/js/smooth-scroll.js"></script>
     <script src="Hover.js" ></script>
-      
-    <script>
-        //jQuery is required to run this code
-$( document ).ready(function() {
-
-    scaleVideoContainer();
-
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
-
-    $(window).on('resize', function() {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
-    });
-
-});
-
-function scaleVideoContainer() {
-
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
-
-}
-
-function initBannerVideoSize(element){
-
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-
-    scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
-
-    console.log(windowHeight);
-
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-        $(this).width(windowWidth);
-
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-            $(this).width(videoWidth).height(videoHeight);
-        }
-
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-    });
-}
-        
-    </script>
 
     <script>
     $(function() {
@@ -108,12 +41,14 @@ function scaleBannerVideoSize(element){
 
   
   <body>
+  <div class="html-mobile-background"> </div>
     <div id="container">
        	
   	     <header>
             <nav>
                 <ul>
                  <li id="homeButton"><a id="aHomeButton" href="http://www.nujjltd.com/"><img src="Images/NujjHigherTop.png" id="icon" alt="Home"></a></li>
+                 <li id="notHomeButton"><a class="big" data-scroll href="#learn_more">Learn more</a></li>
                  <li id="notHomeButton"><a class="big" data-scroll href="#ContactUs">Contact</a></li> 
                  <li id="notHomeButton"><a class="big" href="/aboutPage.html">About us</a></li>
                  <li id="notHomeButton"><a class="big" href="/socialMedia.html">Social</a></li>
@@ -121,72 +56,50 @@ function scaleBannerVideoSize(element){
                 <a href="#" id="pull"></a>
             </nav>
           </header>
+      
+
+    <div id="OurProducts">
         
-        <div class="homepage-hero-module">
-        <div class="video-container">
-            <div class="filter"></div>
-            <video autoplay loop class="fillWidth">
-                <source src="iPhone-Scroll/MP4/nujj_Video.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                <source src="iPhone-Scroll/WEBM/nujj_Video.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>  
+        <p class="primary">All your receipts. In one place. On your phone.</p><br><br><br>
+        
+        
+        
+      <div class="pictures_inline">
+          
+          
+          
+        <div id="NujjReceipts"> 
             
-            <div id="OurProducts">
-
-                                    <p class="primary">All your receipts. In one place. On your phone.</p>
-
-
-
-                                  <div class="pictures_inline">
-
-
-
-                                    <div id="NujjReceipts"> 
-
-                                      <div class="pictureContainer"><img class="main" src="Images/Nujj_Receipts_Full_1.png"></div> 
-
-                                        <p class="nujjReceipts"><b>nujjReceipts</b></p>
-                                        <p id = "learn_more"></p>
-                                        <p><a class="learn_more" data-scroll href="#anchor">Learn more</a></p>
-
-                                        </div>
-                                    </div>
-
-                            <!--            <a href="mailto:info@nujjltd.com?Body=Add your Full name as the subject of this email and hit send!" target="_top"> Sign up for the iOS Beta! </a>-->
-                                            
-
-                                    </div>
+          <div class="pictureContainer"><img class="main" src="Images/Nujj_Receipts_Full_1.png"></div> 
             
+            <p class="nujjReceipts"><b>nujjReceipts</b></p>
+            <p id = "learn_more"></p>
+            <p><a class="learn_more" data-scroll href="#learn_more">Learn more</a></p>
+            
+            </div>
         </div>
-    </div>
         
-         
-
-
-    
+<!--            <a href="mailto:info@nujjltd.com?Body=Add your Full name as the subject of this email and hit send!" target="_top"> Sign up for the iOS Beta! </a>-->
+                <p>
+                    
+                    Over 11 billion paper receipts are printed in the UK each year, <br> on thermal receipt paper that cannot be recycled. <br><br>
+                    
+                    We have developed a fast and elegant mobile application, <b>nujjReceipts</b>,<br> that saves receipt information generated at the till to a user's phone,<br> and it can be used in store as proof of purchase. <br>
+                    This way, no paper is printed out! <br><br>
+                    There's no signing up, and we do not store <br> or take any of your data.
+            
+                </p>
+        
+        </div>
                 
             
             
     
-    <div class="ReceiptsDescription" id="anchor">
-        
-        <div class = "upperDescription">
-        
-        <p>
-
-                                                Over 11 billion paper receipts are printed in the UK each year, <br> on thermal receipt paper that cannot be recycled. <br><br>
-
-                                                We have developed a fast and elegant mobile application, <b>nujjReceipts</b>,<br> that saves receipt information generated at the till to a user's phone,<br> and it can be used in store as proof of purchase. <br>
-                                                This way, no paper is printed out! <br><br>
-                                                There's no signing up, and we do not store <br> or take any of your data.
-
-                                            </p>
-        
+    <div class="ReceiptsDescription">
         <p>Interested in nujjReceipts? <br><br> Download our current app, where you can store all your <br> paper receipts, in one place, on your phone!</p>
-        
                 <a class="apple" href="https://geo.itunes.apple.com/gb/app/nujjreceipts/id1057023005?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:135px;height:40px;"></a><br>
 
                 <a class="android" >Android Coming Soon!</a><br><br><br>
-        </div>
         <div class="Left">
             <h2>What is it?</h2>
             
@@ -216,6 +129,69 @@ function scaleBannerVideoSize(element){
         <br><br><hr/>
         
         
+<!--
+        <div class="infoPictures">
+            <div class="infoPicturesImages">
+                <img src="Images/Filler_1.png" id="icon" alt="Home">
+                <img src="Images/Filler_1.png" id="icon" alt="Home">
+                <img src="Images/Filler_1.png" id="icon" alt="Home">
+                <img src="Images/Filler_1.png" id="icon" alt="Home">
+            <div>
+        </div>
+-->
+
+<!--
+    <div id="OurPeople"><h1>Our People</h1></div>
+
+    <div id="Alex" class="Person">
+      <div id="image">
+        <h6><b>Alexander Hewitt -</b> Managing Director, Business Operations Director<br>iOS Development Team</h6>
+        <img src="Images/Alex.png">
+      </div>
+      <blockquote class="bq3">
+      <p>Alex is the company's motivator and ideas man. Having a clear vision on how the company should be run, Alex defines our core principles. With his determined and thorough attitude, he ensures these principles are at the heart of everything we produce.</p>
+      </blockquote>   
+    </div>
+
+    <div class="Person">
+        <div id="Charlie">
+            <div id="image">
+                <h6><b>Charlie Hall -</b> Finance Director<br>iOS Development Team</h6>
+                <img src="Images/Charlie.png">
+            </div>
+        </div>
+      <blockquote class="bq3">
+      <p>A true realist that believes strongly in the company principles, Charlie brings us down to Earth when clarity is needed to move forward. Providing simple and clean solutions, he will ensure you understand the products we bring you.</p>
+    </blockquote>   
+    </div>
+
+    <div id="Ben" class="Person">
+      <div id="image">
+        <h6><b>Benjamin Fongenie -</b> Business Development Director<br>Android Development Team</h6>
+        <img src="Images/Ben.png">
+      </div>
+      <blockquote class="bq3">
+      <p>Leaving no stone unturned and no corners cut, Ben defines the care we believe is needed to produce the perfect products for you. Having a strong legal background, he provides the foundations needed for our ideas to flourish.</p>
+    </blockquote>   
+    </div>
+
+    <div id="Marcin" class="Person">
+      <div id="image">
+        <h6><b>Marcin Górny -</b> Technology Director<br>Android Development Team</h6>
+        <img src="Images/Marcin.png">
+      </div>
+      <blockquote class="bq3">
+      <p>The newest addition to the Nujj team, Marcin comes with a unique skill set. Full of innovative ideas and a fine critic of all aspects of the company, every product you see will be fine-tuned until it reaches his high expectations.</p>
+    </blockquote>   
+    </div><hr />
+
+    <h1>Our Principles</h1>
+
+    <div id="PrincipleOne">
+      <h2>Business Principle One</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non massa vitae risus fermentum ullamcorper. Phasellus risus urna, ornare in aliquam id, porttitor sit amet sapien.</p>
+    </div><hr />
+-->
 
     <h1 id="ContactUs">Contact Us</h1>
         
@@ -258,7 +234,6 @@ function scaleBannerVideoSize(element){
     <script src="classie.js" ></script>
     <script>smoothScroll.init();</script>
   </div>
-    
   </body>
 </html>
 
