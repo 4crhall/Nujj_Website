@@ -874,9 +874,7 @@ hr { clear:both; width:70%; height:1px; background: #fff; text-align: center; }
 }
     
     
-    video {
-        display: none;
-    }
+    
     
     header {
 	background-color: rgb(64,64,66);
